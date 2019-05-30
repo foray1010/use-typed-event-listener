@@ -27,13 +27,19 @@ function useEventListener<
     evt: DocumentEventMap[KD] | HTMLElementEventMap[KH] | WindowEventMap[KW] | Event
   ) => void
 ): void {
+  const listenerRef = React.useRef(listener)
+  listenerRef.current = listener
+
   React.useEffect(() => {
     if (!element) return undefined
 
-    element.addEventListener(eventType, listener)
+    // to avoid keep updating listener in DOM
+    const wrappedListener: typeof listener = (evt) => listenerRef.current(evt)
+
+    element.addEventListener(eventType, wrappedListener)
 
     return () => {
-      element.removeEventListener(eventType, listener)
+      element.removeEventListener(eventType, wrappedListener)
     }
   }, [element, eventType, listener])
 }
