@@ -46,7 +46,7 @@ function useEventListener<
     return () => {
       element.removeEventListener(eventType, wrappedListener)
     }
-  }, [element, eventType, listener])
+  }, [element, eventType])
 }
 
 export default useEventListener
