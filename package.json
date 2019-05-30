@@ -6,6 +6,18 @@
     "node": ">=8.9"
   },
   "sideEffects": false,
+  "scripts": {
+    "ci": "npm-run-all -p lint:* type:* test",
+    "dev": "shx rm -rf dist/ && tsc --watch",
+    "ignore-sync": "ignore-sync",
+    "lint": "npm-run-all -p lint:*",
+    "lint:js": "eslint --ext ts .",
+    "lint:md": "markdownlint '*.md'",
+    "prepublishOnly": "shx rm -rf dist/ && tsc",
+    "test": "jest --config .jestrc.json --passWithNoTests",
+    "type:check": "tsc --noEmit --project ./tsconfig.typecheck.json",
+    "type:coverage": "type-coverage --strict --at-least 94 --detail --ignore-catch"
+  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "typescript": ">=3.5.1"
@@ -28,8 +40,10 @@
     "jest": "24.8.0",
     "lint-staged": "8.1.7",
     "markdownlint-cli": "0.16.0",
+    "npm-run-all": "4.1.5",
     "prettier-eslint-cli": "4.7.1",
     "react": "16.8.6",
+    "shx": "0.3.2",
     "type-coverage": "2.0.2",
     "typescript": "3.5.1"
   },
