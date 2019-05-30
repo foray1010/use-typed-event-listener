@@ -1,0 +1,52 @@
+{
+  "name": "use-typed-event-listener",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=8.9"
+  },
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "typescript": ">=3.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/preset-typescript": "7.3.3",
+    "@commitlint/cli": "7.6.1",
+    "@commitlint/config-conventional": "7.6.0",
+    "@types/babel__core": "7.1.2",
+    "@types/eslint": "4.16.6",
+    "@types/react": "16.8.19",
+    "eslint": "5.16.0",
+    "eslint-config-foray1010": "7.3.0",
+    "husky": "2.3.0",
+    "ignore-sync": "2.0.0",
+    "import-sort-cli": "6.0.0",
+    "import-sort-parser-typescript": "6.0.0",
+    "import-sort-style-module": "6.0.0",
+    "jest": "24.8.0",
+    "lint-staged": "8.1.7",
+    "markdownlint-cli": "0.16.0",
+    "prettier-eslint-cli": "4.7.1",
+    "react": "16.8.6",
+    "type-coverage": "2.0.2",
+    "typescript": "3.5.1"
+  },
+  "description": "React Hook for DOM event listeners with TypeScript supported",
+  "keywords": [
+    "document",
+    "event",
+    "event-listener",
+    "hooks",
+    "react",
+    "react-hooks",
+    "typed",
+    "typescript",
+    "window"
+  ],
+  "author": "foray1010",
+  "homepage": "https://github.com/foray1010/use-typed-event-listener",
+  "repository": "foray1010/use-typed-event-listener",
+  "bugs": "https://github.com/foray1010/use-typed-event-listener/issues"
+}
