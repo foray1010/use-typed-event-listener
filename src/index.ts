@@ -15,6 +15,11 @@ function useEventListener<KW extends keyof WindowEventMap>(
   eventType: KW,
   listener: (evt: WindowEventMap[KW]) => void
 ): void
+function useEventListener(
+  element: Document | HTMLElement | Window | void,
+  eventType: string,
+  listener: (evt: Event) => void
+): void
 
 function useEventListener<
   KD extends keyof DocumentEventMap,
