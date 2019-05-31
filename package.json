@@ -17,9 +17,9 @@
     "lint:js": "eslint --ext ts .",
     "lint:md": "markdownlint '*.md'",
     "prepublishOnly": "shx rm -rf dist/ && tsc",
-    "test": "jest --config .jestrc.json --passWithNoTests",
+    "test": "jest --config .jestrc.json",
     "type:check": "tsc --noEmit --project ./tsconfig.typecheck.json",
-    "type:coverage": "type-coverage --strict --at-least 94 --detail --ignore-catch"
+    "type:coverage": "type-coverage --strict --at-least 100 --detail --ignore-catch"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -27,12 +27,17 @@
   },
   "devDependencies": {
     "@babel/core": "7.4.5",
+    "@babel/preset-env": "7.4.5",
     "@babel/preset-typescript": "7.3.3",
     "@commitlint/cli": "7.6.1",
     "@commitlint/config-conventional": "7.6.0",
+    "@testing-library/react": "8.0.1",
     "@types/babel__core": "7.1.2",
     "@types/eslint": "4.16.6",
+    "@types/jest": "24.0.13",
     "@types/react": "16.8.19",
+    "@types/react-dom": "16.8.4",
+    "@types/react-test-renderer": "16.8.1",
     "eslint": "5.16.0",
     "eslint-config-foray1010": "7.3.0",
     "husky": "2.3.0",
@@ -46,6 +51,9 @@
     "npm-run-all": "4.1.5",
     "prettier-eslint-cli": "4.7.1",
     "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-hooks-testing-library": "0.5.0",
+    "react-test-renderer": "16.8.6",
     "shx": "0.3.2",
     "type-coverage": "2.0.2",
     "typescript": "3.5.1"
