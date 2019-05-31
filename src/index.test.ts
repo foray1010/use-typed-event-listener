@@ -20,23 +20,27 @@ describe('useEventListener', () => {
     expect(eventListener).toHaveBeenCalledTimes(1)
   })
 
-  it('should update event listener', () => {
+  it('should update event listener without re-binding', () => {
     let count = 0
 
     const firstEventListener = jest.fn<void, [MouseEvent]>()
     const secondEventListener = jest.fn<void, [MouseEvent]>()
 
+    const dummyElement = document.createElement('div')
+    const spiedAddEventListener = jest.spyOn(dummyElement, 'addEventListener')
+
     const {rerender} = renderHook(() => {
       count += 1
       const eventListener = count === 1 ? firstEventListener : secondEventListener
 
-      useEventListener(window, 'click', eventListener)
+      useEventListener(dummyElement, 'click', eventListener)
     })
 
-    fireEvent.click(window)
+    fireEvent.click(dummyElement)
     rerender()
-    fireEvent.click(window)
+    fireEvent.click(dummyElement)
 
+    expect(spiedAddEventListener).toHaveBeenCalledTimes(1)
     expect(firstEventListener).toHaveBeenCalledTimes(1)
     expect(secondEventListener).toHaveBeenCalledTimes(1)
   })
