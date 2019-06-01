@@ -1,6 +1,7 @@
 {
   "name": "use-typed-event-listener",
   "version": "1.1.0",
+  "license": "MIT",
   "main": "dist/index.js",
   "files": [
     "dist",
