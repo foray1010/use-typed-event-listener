@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/foray1010/use-typed-event-listener/compare/v1.0.0...v1.1.0) (2019-06-01)
+
+### Bug Fixes
+
+- include LICENSE in release ([b63b5e8](https://github.com/foray1010/use-typed-event-listener/commit/b63b5e8))
+
+### Features
+
+- bind `this` in event listener ([6fcd560](https://github.com/foray1010/use-typed-event-listener/commit/6fcd560))
+
 ## 1.0.0 (2019-05-31)
 
 ### Bug Fixes
