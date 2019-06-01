@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/foray1010/use-typed-event-listener/compare/v1.1.0...v1.1.1) (2019-06-01)
+
+### Bug Fixes
+
+- add license in package.json ([5e4f06b](https://github.com/foray1010/use-typed-event-listener/commit/5e4f06b))
+
 ## [1.1.0](https://github.com/foray1010/use-typed-event-listener/compare/v1.0.0...v1.1.0) (2019-06-01)
 
 ### Bug Fixes
