@@ -1,4 +1,4 @@
-import {fireEvent} from '@testing-library/react'
+import {fireEvent} from '@testing-library/dom'
 import {renderHook} from 'react-hooks-testing-library'
 
 import useEventListener from '.'
@@ -79,8 +79,7 @@ describe('useEventListener', () => {
       useEventListener(document, 'click', eventListener)
     })
 
-    // `as any` as `fireEvent.click` doesn't accept `document`
-    fireEvent.click(document as any)
+    fireEvent.click(document)
     expect(eventListener).toHaveBeenCalledTimes(1)
   })
 
