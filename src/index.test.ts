@@ -4,7 +4,19 @@ import {renderHook} from 'react-hooks-testing-library'
 import useEventListener from '.'
 
 describe('useEventListener', () => {
-  it('should bind and unbind event listener', () => {
+  it('should bind event listener and call with event', () => {
+    const eventListener = jest.fn<void, [MouseEvent]>()
+
+    renderHook(() => {
+      useEventListener(window, 'click', eventListener)
+    })
+
+    fireEvent.click(window)
+    expect(eventListener).toHaveBeenCalledTimes(1)
+    expect(eventListener).toHaveBeenCalledWith(expect.any(Event))
+  })
+
+  it('should unbind event listener', () => {
     const eventListener = jest.fn<void, [MouseEvent]>()
 
     const {unmount} = renderHook(() => {

@@ -1,3 +1,5 @@
 extends:
   - 'eslint-config-foray1010/typescript'
   - 'eslint-config-foray1010/rules/frontend'
+globals:
+  Event: false
