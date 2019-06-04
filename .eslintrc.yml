@@ -1,5 +1,10 @@
 extends:
   - 'eslint-config-foray1010/typescript'
   - 'eslint-config-foray1010/rules/frontend'
+plugins:
+  - 'eslint-plugin-react-hooks'
 globals:
   Event: false
+rules:
+  react-hooks/exhaustive-deps: 'error'
+  react-hooks/rules-of-hooks: 'error'
