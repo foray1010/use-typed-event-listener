@@ -19,10 +19,10 @@ npm install use-typed-event-listener
 yarn add use-typed-event-listener
 ```
 
-## Usage
+## Interface
 
 ```js
-useEventListener(element, eventType, listener)
+useEventListener(element, eventType, listener[, options])
 ```
 
 - `element` can be `window`, `document` or any `HTMLElement`. If it is `undefined`, no event will not be bound
@@ -30,6 +30,10 @@ useEventListener(element, eventType, listener)
 - `eventType` is a case-sensitive string representing the [event type](https://developer.mozilla.org/en-US/docs/Web/Events) to listen for
 
 - `listener` is the callback function when an event of `eventType` occurs
+
+- `options` _(optional)_ see <https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Parameters>
+
+## Usage
 
 - `listener` typings will be automatically casted based on `element` and `eventType`
 
@@ -40,6 +44,21 @@ useEventListener(element, eventType, listener)
     // typings for `event` will be `MouseEvent` as this package recognizes the `click` event type
     useEventListener(window, 'click', (event) => {
       console.log(event.buttons)
+    })
+
+    return <SomeComponent />
+  }
+  ```
+
+- No need to avoid passing new reference to `listener` or `options`, they are memorized and will not trigger the hook again
+
+  ```tsx
+  import useEventListener from 'use-typed-event-listener'
+
+  export default (props: Props) => {
+    // this hook will only run once
+    useEventListener(window, 'click', (event) => {}, {
+      capture: true
     })
 
     return <SomeComponent />

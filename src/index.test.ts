@@ -16,6 +16,64 @@ describe('useEventListener', () => {
     expect(eventListener).toHaveBeenCalledWith(expect.any(Event))
   })
 
+  it('should create event listener with `options`', () => {
+    const childEventListener = jest.fn<void, [MouseEvent]>()
+    const parentEventListener = jest.fn<void, [MouseEvent]>().mockImplementation((evt) => {
+      evt.stopPropagation()
+    })
+
+    const childElement = document.createElement('div')
+    const parentElement = document.createElement('div')
+    parentElement.appendChild(childElement)
+
+    renderHook(() => {
+      useEventListener(childElement, 'click', childEventListener)
+      useEventListener(parentElement, 'click', parentEventListener, true)
+    })
+
+    fireEvent.click(childElement)
+    expect(childEventListener).toHaveBeenCalledTimes(0)
+    expect(parentEventListener).toHaveBeenCalledTimes(1)
+  })
+
+  it('should not re-bind event listener when `options` is the same', () => {
+    const eventListener = jest.fn<void, [MouseEvent]>()
+
+    const dummyElement = document.createElement('div')
+    jest.spyOn(dummyElement, 'addEventListener')
+
+    const {rerender} = renderHook(() => {
+      useEventListener(dummyElement, 'click', eventListener, {
+        capture: true
+      })
+    })
+
+    rerender()
+
+    expect(dummyElement.addEventListener).toHaveBeenCalledTimes(1)
+  })
+
+  it('should re-bind event listener when `options` is not the same', () => {
+    const eventListener = jest.fn<void, [MouseEvent]>()
+
+    const dummyElement = document.createElement('div')
+    jest.spyOn(dummyElement, 'addEventListener')
+
+    let count = 0
+    const {rerender} = renderHook(() => {
+      count += 1
+      const capture = count === 1
+
+      useEventListener(dummyElement, 'click', eventListener, {
+        capture
+      })
+    })
+
+    rerender()
+
+    expect(dummyElement.addEventListener).toHaveBeenCalledTimes(2)
+  })
+
   it('should unbind event listener', () => {
     const eventListener = jest.fn<void, [MouseEvent]>()
 
