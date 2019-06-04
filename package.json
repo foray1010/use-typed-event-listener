@@ -2,23 +2,26 @@
   "name": "use-typed-event-listener",
   "version": "1.2.0",
   "license": "MIT",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "sideEffects": false,
   "files": [
-    "dist",
-    "LICENSE"
+    "dist"
   ],
   "engines": {
     "node": ">=8.9"
   },
-  "sideEffects": false,
   "scripts": {
+    "build": "npm-run-all -p build:*",
+    "build:cjs": "tsc",
+    "build:esm": "tsc -m esNext --outDir dist/esm",
     "ci": "npm-run-all -p lint:* type:* test",
     "dev": "shx rm -rf dist/ && tsc --watch",
     "ignore-sync": "ignore-sync",
     "lint": "npm-run-all -p lint:*",
     "lint:js": "eslint --ext ts .",
     "lint:md": "markdownlint '*.md'",
-    "prepublishOnly": "shx rm -rf dist/ && tsc",
+    "prepublishOnly": "shx rm -rf dist/ && yarn build",
     "test": "jest --config .jestrc.json",
     "type:check": "tsc --noEmit --project ./tsconfig.typecheck.json",
     "type:coverage": "type-coverage --strict --at-least 100 --detail --ignore-catch"
