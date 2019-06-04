@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "declarationMap": true,
+    "declarationDir": "dist",
+    "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "lib": ["dom", "es2018"],
-    "module": "commonjs",
     "moduleResolution": "node",
-    "outDir": "dist/cjs",
     "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
