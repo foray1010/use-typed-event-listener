@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/foray1010/use-typed-event-listener/compare/v1.1.1...v1.2.0) (2019-06-04)
+
+### Features
+
+- accept `useCapture` or `options` as 4th argument ([#4](https://github.com/foray1010/use-typed-event-listener/issues/4)) ([043511b](https://github.com/foray1010/use-typed-event-listener/commit/043511b))
+
+### Tests
+
+- should bind event listener and call with event ([bf593d7](https://github.com/foray1010/use-typed-event-listener/commit/bf593d7))
+
 ### [1.1.1](https://github.com/foray1010/use-typed-event-listener/compare/v1.1.0...v1.1.1) (2019-06-01)
 
 ### Bug Fixes
