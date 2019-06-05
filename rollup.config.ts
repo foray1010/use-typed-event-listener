@@ -1,5 +1,7 @@
+// @ts-ignore
 import babel from 'rollup-plugin-babel'
 import replace from 'rollup-plugin-replace'
+// @ts-ignore
 import {terser} from 'rollup-plugin-terser'
 
 export default ['cjs', 'esm'].map((build) => ({
