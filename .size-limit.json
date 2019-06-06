@@ -1,0 +1,10 @@
+[
+  {
+    "path": "dist/index.cjs.js",
+    "limit": "1129 B"
+  },
+  {
+    "path": "dist/index.esm.js",
+    "limit": "1053 B"
+  }
+]
