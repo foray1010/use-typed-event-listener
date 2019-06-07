@@ -13,10 +13,12 @@
     "node": ">=8.9"
   },
   "scripts": {
-    "build": "shx rm -rf dist/ && rollup -c rollup.config.ts && tsc",
+    "prebuild": "yarn clean:build",
+    "build": "tsc && rollup -c rollup.config.ts",
     "ci": "npm-run-all -p build lint:* type:* test && size-limit",
-    "dev": "shx rm -rf dist/ && tsc --watch",
-    "ignore-sync": "ignore-sync",
+    "clean:build": "shx rm -rf dist/",
+    "predev": "yarn clean:build",
+    "dev": "tsc --watch",
     "lint": "npm-run-all -p lint:*",
     "lint:js": "eslint --ext ts .",
     "lint:md": "markdownlint '*.md'",
