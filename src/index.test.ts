@@ -1,5 +1,5 @@
 import {fireEvent} from '@testing-library/dom'
-import {renderHook} from 'react-hooks-testing-library'
+import {renderHook} from '@testing-library/react-hooks'
 
 import useEventListener from '.'
 
