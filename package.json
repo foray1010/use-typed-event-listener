@@ -40,7 +40,7 @@
     "@babel/preset-typescript": "7.3.3",
     "@commitlint/cli": "8.0.0",
     "@commitlint/config-conventional": "8.0.0",
-    "@testing-library/dom": "5.5.1",
+    "@testing-library/dom": "5.5.2",
     "@testing-library/react-hooks": "1.1.0",
     "@types/babel__core": "7.1.2",
     "@types/eslint": "4.16.6",
