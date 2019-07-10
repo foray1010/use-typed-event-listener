@@ -1064,10 +1064,10 @@
   resolved "https://registry.yarnpkg.com/@sheerun/mutationobserver-shim/-/mutationobserver-shim-0.3.2.tgz#8013f2af54a2b7d735f71560ff360d3a8176a87b"
   integrity sha512-vTCdPp/T/Q3oSqwHmZ5Kpa9oI7iLtGl3RQaA/NyLHikvcrPxACkkKVr/XzkSPJWXHRhKGzVvb0urJsbMlRxi1Q==
 
-"@testing-library/dom@5.5.1":
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-5.5.1.tgz#ac6a5244b8b7af3e7000834abf1f79d26cdcdd1d"
-  integrity sha512-FEKxR51dCBixz8WoIlTHJucLYlVSZ4oMaWcnbID8SKRy+07JNACwUDHzpeeQv0853Hme91niHnvNebwGWZu21w==
+"@testing-library/dom@5.5.2":
+  version "5.5.2"
+  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-5.5.2.tgz#8adc02bbfd70bd2b647aca63badc86e8fe3b24e7"
+  integrity sha512-7Yrpqr67sN/+96tCEZx/0rZ/mD4/ShyF5Ve8eNWhfSJQf5uXyXqbMzDov+rrAqvk89cT/r8bal4XhHwAySH15A==
   dependencies:
     "@babel/runtime" "^7.4.5"
     "@sheerun/mutationobserver-shim" "^0.3.2"
