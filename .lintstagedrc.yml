@@ -14,6 +14,3 @@
   - 'prettier-eslint --write'
   - 'markdownlint'
   - 'git add'
-'*ignore-sync':
-  - 'ignore-sync'
-  - 'git add'

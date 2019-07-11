@@ -159,3 +159,4 @@ $RECYCLE.BIN/
 *.lnk
 
 dist/
+dist-dts/
