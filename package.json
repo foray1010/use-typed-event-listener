@@ -39,7 +39,7 @@
     "@commitlint/cli": "8.1.0",
     "@commitlint/config-conventional": "8.1.0",
     "@size-limit/preset-small-lib": "2.0.2",
-    "@testing-library/dom": "6.0.0",
+    "@testing-library/dom": "6.0.1",
     "@testing-library/react-hooks": "2.0.1",
     "@types/babel__core": "7.1.2",
     "@types/eslint": "4.16.8",
