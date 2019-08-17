@@ -1080,10 +1080,10 @@
     webpack "^4.39.2"
     webpack-bundle-analyzer "^3.4.1"
 
-"@testing-library/dom@6.0.1":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-6.0.1.tgz#939c7524bcf91d750bbb3bac3366d17e166224a0"
-  integrity sha512-A07uE2btlK/F8HsdocRE0tdLB5waHFzc+BDk8/6qf37YmgNqwrMszElHaj2V61vLi8zQUKKqs/eKKLbjMAkTEw==
+"@testing-library/dom@6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-6.1.0.tgz#8d5a954158e81ecd7c994907f4ec240296ed823b"
+  integrity sha512-qivqFvnbVIH3DyArFofEU/jlOhkGIioIemOy9A9M/NQTpPyDDQmtVkAfoB18RKN581f0s/RJMRBbq9WfMIhFTw==
   dependencies:
     "@babel/runtime" "^7.5.5"
     "@sheerun/mutationobserver-shim" "^0.3.2"
