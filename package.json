@@ -68,7 +68,7 @@
     "rollup-plugin-replace": "2.2.0",
     "rollup-plugin-terser": "5.1.2",
     "shx": "0.3.2",
-    "type-coverage": "2.2.0",
+    "type-coverage": "2.3.0",
     "typescript": "3.6.3"
   },
   "description": "React Hook for DOM event listeners with TypeScript supported",
