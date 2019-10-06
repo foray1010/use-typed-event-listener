@@ -18,7 +18,7 @@ describe('useEventListener', () => {
 
   it('should create event listener with `options`', () => {
     const childEventListener = jest.fn<void, [MouseEvent]>()
-    const parentEventListener = jest.fn<void, [MouseEvent]>().mockImplementation((evt) => {
+    const parentEventListener = jest.fn<void, [MouseEvent]>().mockImplementation(evt => {
       evt.stopPropagation()
     })
 
