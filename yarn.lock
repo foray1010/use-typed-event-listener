@@ -1204,6 +1204,11 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
 
+"@types/prettier@1.18.2":
+  version "1.18.2"
+  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-1.18.2.tgz#069e7d132024d436fd1f5771f6932426a695f230"
+  integrity sha512-2JBasa5Qaj81Qsp/dxX2Njy+MdKC767WytHUDsRM7TYEfQvKPxsnGpnCBlBS1i2Aiv1YwCpmKSbQ6O6v8TpiKg==
+
 "@types/prop-types@*":
   version "15.7.3"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
@@ -1246,6 +1251,13 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
   integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
 
+"@types/testing-library__dom@6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@types/testing-library__dom/-/testing-library__dom-6.5.0.tgz#ae67c9cdac1bb20dd210bbf3decac9da16981f84"
+  integrity sha512-VgfB4rXWA7jAHbmTM4yAZeaxsh/YBd0qIuOZ7v1+17V6poO0KxdH6bq95O2+EiGwuAkS7Lcm1gh5sI7gUjAkxw==
+  dependencies:
+    pretty-format "^24.3.0"
+
 "@types/testing-library__dom@^6.0.0":
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/@types/testing-library__dom/-/testing-library__dom-6.4.0.tgz#a9411ed4942a11260ffd1790c4d2225959171c72"
@@ -1253,7 +1265,7 @@
   dependencies:
     pretty-format "^24.3.0"
 
-"@types/testing-library__react-hooks@^2.0.0":
+"@types/testing-library__react-hooks@2.0.0", "@types/testing-library__react-hooks@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@types/testing-library__react-hooks/-/testing-library__react-hooks-2.0.0.tgz#7b289d64945517ae8ba9cbcb0c5b282432aaeffa"
   integrity sha512-YUVqXGCChJKEJ4aAnMXqPCq0NfPAFVsJeGIb2y/iiMjxwyu+45+vR+AHOwjJHHKEHeC0ZhOGrZ5gSEmaJe4tyQ==
