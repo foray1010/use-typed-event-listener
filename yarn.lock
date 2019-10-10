@@ -818,10 +818,10 @@
   dependencies:
     find-up "^4.0.0"
 
-"@foray1010/eslint-config@1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@foray1010/eslint-config/-/eslint-config-1.2.2.tgz#82fd0fe3d48822a78e44607b3f885c59a2623915"
-  integrity sha512-9C6o9HtcAOZ87KYJiKoNH+QAnxQEm/TlH6yuQp8sxTvZckELELpYgYYK6CLKEiKY+duRuk3bzjKMZXZ+icOCyQ==
+"@foray1010/eslint-config@1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@foray1010/eslint-config/-/eslint-config-1.2.3.tgz#2a9f73236de46fb4981946118d35213b21cd9ef5"
+  integrity sha512-mwA0YaoiwUb+9N2oCBKNqloGG9GTyPnij+9MRMRDvUv+EVsL56yvNeY7q2i6wb7JRr9loOVII3pdqSEWg9dfqQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.3.2"
     "@typescript-eslint/parser" "^2.3.2"
@@ -832,6 +832,7 @@
     eslint-plugin-prettier "^3.1.1"
     eslint-plugin-react "^7.16.0"
     eslint-plugin-react-hooks "^2.1.2"
+    typescript "^3.6.3"
 
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
@@ -8856,6 +8857,11 @@ typescript@3.6.3, typescript@^3.2.4:
   version "3.6.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.3.tgz#fea942fabb20f7e1ca7164ff626f1a9f3f70b4da"
   integrity sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==
+
+typescript@^3.6.3:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.4.tgz#b18752bb3792bc1a0281335f7f6ebf1bbfc5b91d"
+  integrity sha512-unoCll1+l+YK4i4F8f22TaNVPRHcD9PA3yCuZ8g5e0qGqlVlJ/8FSateOLLSagn+Yg5+ZwuPkL8LFUc0Jcvksg==
 
 uc.micro@^1.0.1, uc.micro@^1.0.5:
   version "1.0.6"
