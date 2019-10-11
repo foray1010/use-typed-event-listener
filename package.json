@@ -39,6 +39,7 @@
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
     "@foray1010/eslint-config": "1.2.3",
+    "@foray1010/prettierrc": "1.0.1",
     "@size-limit/preset-small-lib": "2.1.6",
     "@testing-library/dom": "6.5.0",
     "@testing-library/react-hooks": "2.0.3",

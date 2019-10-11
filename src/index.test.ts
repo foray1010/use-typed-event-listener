@@ -1,5 +1,5 @@
-import {fireEvent} from '@testing-library/dom'
-import {renderHook} from '@testing-library/react-hooks'
+import { fireEvent } from '@testing-library/dom'
+import { renderHook } from '@testing-library/react-hooks'
 
 import useEventListener from '.'
 
@@ -18,9 +18,11 @@ describe('useEventListener', () => {
 
   it('should create event listener with `options`', () => {
     const childEventListener = jest.fn<void, [MouseEvent]>()
-    const parentEventListener = jest.fn<void, [MouseEvent]>().mockImplementation(evt => {
-      evt.stopPropagation()
-    })
+    const parentEventListener = jest
+      .fn<void, [MouseEvent]>()
+      .mockImplementation(evt => {
+        evt.stopPropagation()
+      })
 
     const childElement = document.createElement('div')
     const parentElement = document.createElement('div')
@@ -42,9 +44,9 @@ describe('useEventListener', () => {
     const dummyElement = document.createElement('div')
     jest.spyOn(dummyElement, 'addEventListener')
 
-    const {rerender} = renderHook(() => {
+    const { rerender } = renderHook(() => {
       useEventListener(dummyElement, 'click', eventListener, {
-        capture: true
+        capture: true,
       })
     })
 
@@ -60,12 +62,12 @@ describe('useEventListener', () => {
     jest.spyOn(dummyElement, 'addEventListener')
 
     let count = 0
-    const {rerender} = renderHook(() => {
+    const { rerender } = renderHook(() => {
       count += 1
       const capture = count === 1
 
       useEventListener(dummyElement, 'click', eventListener, {
-        capture
+        capture,
       })
     })
 
@@ -77,7 +79,7 @@ describe('useEventListener', () => {
   it('should unbind event listener', () => {
     const eventListener = jest.fn<void, [MouseEvent]>()
 
-    const {unmount} = renderHook(() => {
+    const { unmount } = renderHook(() => {
       useEventListener(window, 'click', eventListener)
     })
 
@@ -94,7 +96,7 @@ describe('useEventListener', () => {
     const obj = {
       eventListener() {
         return this
-      }
+      },
     }
     jest.spyOn(obj, 'eventListener')
 
@@ -114,9 +116,10 @@ describe('useEventListener', () => {
     jest.spyOn(dummyElement, 'addEventListener')
 
     let count = 0
-    const {rerender} = renderHook(() => {
+    const { rerender } = renderHook(() => {
       count += 1
-      const eventListener = count === 1 ? firstEventListener : secondEventListener
+      const eventListener =
+        count === 1 ? firstEventListener : secondEventListener
 
       useEventListener(dummyElement, 'click', eventListener)
     })
@@ -164,7 +167,7 @@ describe('useEventListener', () => {
   })
 
   it('should pass if element is undefined', () => {
-    const {result} = renderHook(() => {
+    const { result } = renderHook(() => {
       useEventListener(undefined, 'click', () => {})
     })
 

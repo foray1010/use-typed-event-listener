@@ -1,4 +1,4 @@
-import {shallowEqual} from 'fast-equals'
+import { shallowEqual } from 'fast-equals'
 import * as React from 'react'
 
 const useShallowMemorize = <T>(value: T): T => {
@@ -15,25 +15,25 @@ function useEventListener<KD extends keyof DocumentEventMap>(
   element: Document | void,
   eventType: KD,
   listener: (this: Document, evt: DocumentEventMap[KD]) => void,
-  options?: boolean | AddEventListenerOptions
+  options?: boolean | AddEventListenerOptions,
 ): void
 function useEventListener<KH extends keyof HTMLElementEventMap>(
   element: HTMLElement | void,
   eventType: KH,
   listener: (this: HTMLElement, evt: HTMLElementEventMap[KH]) => void,
-  options?: boolean | AddEventListenerOptions
+  options?: boolean | AddEventListenerOptions,
 ): void
 function useEventListener<KW extends keyof WindowEventMap>(
   element: Window | void,
   eventType: KW,
   listener: (this: Window, evt: WindowEventMap[KW]) => void,
-  options?: boolean | AddEventListenerOptions
+  options?: boolean | AddEventListenerOptions,
 ): void
 function useEventListener(
   element: Document | HTMLElement | Window | void,
   eventType: string,
   listener: (evt: Event) => void,
-  options?: boolean | AddEventListenerOptions
+  options?: boolean | AddEventListenerOptions,
 ): void
 
 function useEventListener<
@@ -45,9 +45,13 @@ function useEventListener<
   eventType: KD | KH | KW | string,
   listener: (
     this: typeof element,
-    evt: DocumentEventMap[KD] | HTMLElementEventMap[KH] | WindowEventMap[KW] | Event
+    evt:
+      | DocumentEventMap[KD]
+      | HTMLElementEventMap[KH]
+      | WindowEventMap[KW]
+      | Event,
   ) => void,
-  options?: boolean | AddEventListenerOptions
+  options?: boolean | AddEventListenerOptions,
 ): void {
   const listenerRef = React.useRef(listener)
   listenerRef.current = listener
