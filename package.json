@@ -17,7 +17,7 @@
     "build": "tsc && rollup -c rollup.config.ts",
     "ci": "npm-run-all -p build lint:* type:* test && size-limit",
     "clean:build": "shx rm -rf dist/ build-dts/",
-    "eslint": "eslint --ext=js,mjs,ts,tsx --ignore-path=node_modules/@foray1010/eslint-config/eslintignore",
+    "eslint": "eslint --ext=cjs,js,mjs,ts,tsx --ignore-path=node_modules/@foray1010/eslint-config/eslintignore",
     "lint": "npm-run-all -p lint:*",
     "lint:js": "yarn eslint .",
     "lint:md": "yarn remark .",
