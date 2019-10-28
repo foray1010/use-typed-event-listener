@@ -1,7 +1,4 @@
-'.babelrc':
-  - 'yarn prettier --parser json --write'
-  - 'git add'
-'*.ts':
+'*.{js,ts}':
   - 'import-sort --write'
   - 'yarn prettier --write'
   - 'yarn eslint --fix'
@@ -13,4 +10,11 @@
 '*.md':
   - 'yarn prettier --write'
   - 'yarn remark'
+  - 'git add'
+'.babelrc':
+  - 'yarn prettier --parser'
+  - 'git add'
+'package.json':
+  - 'sort-package-json'
+  - 'yarn prettier --write'
   - 'git add'
