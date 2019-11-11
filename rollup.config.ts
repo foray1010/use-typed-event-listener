@@ -1,7 +1,7 @@
+import replace from '@rollup/plugin-replace'
 // @ts-ignore
 import babel from 'rollup-plugin-babel'
 import dts from 'rollup-plugin-dts'
-import replace from 'rollup-plugin-replace'
 import { terser } from 'rollup-plugin-terser'
 
 export default [
@@ -23,7 +23,7 @@ export default [
     ],
   })),
   {
-    input: 'build-dts/index.d.ts',
+    input: 'build/dts/index.d.ts',
     output: { file: 'dist/index.d.ts' },
     plugins: [dts()],
   },
