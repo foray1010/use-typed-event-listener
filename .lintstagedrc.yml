@@ -11,9 +11,6 @@
   - 'yarn prettier --write'
   - 'yarn remark'
   - 'git add'
-'.babelrc':
-  - 'yarn prettier --write'
-  - 'git add'
 'package.json':
   - 'sort-package-json'
   - 'yarn prettier --write'
