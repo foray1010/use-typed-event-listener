@@ -168,6 +168,7 @@ describe('useEventListener', () => {
 
   it('should pass if element is undefined', () => {
     const { result } = renderHook(() => {
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
       useEventListener(undefined, 'click', () => {})
     })
 
