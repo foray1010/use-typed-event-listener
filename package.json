@@ -59,7 +59,7 @@
     "@testing-library/react-hooks": "3.2.1",
     "@types/jest": "24.9.1",
     "@types/react": "16.9.19",
-    "@types/testing-library__dom": "6.11.1",
+    "@types/testing-library__dom": "6.12.0",
     "@types/testing-library__react-hooks": "3.2.0",
     "eslint": "6.8.0",
     "husky": "4.2.1",
