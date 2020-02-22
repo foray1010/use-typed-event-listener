@@ -54,7 +54,7 @@
     "@foray1010/prettier-config": "3.0.0",
     "@foray1010/remark-preset": "2.0.1",
     "@rollup/plugin-replace": "2.2.1",
-    "@size-limit/preset-small-lib": "4.0.1",
+    "@size-limit/preset-small-lib": "4.0.2",
     "@testing-library/dom": "6.12.2",
     "@testing-library/react-hooks": "3.2.1",
     "@types/jest": "25.1.2",
