@@ -5,7 +5,7 @@ import dts from 'rollup-plugin-dts'
 import { terser } from 'rollup-plugin-terser'
 
 export default [
-  ...['cjs', 'esm'].map(build => ({
+  ...['cjs', 'esm'].map((build) => ({
     input: 'src/index.ts',
     output: {
       file: `dist/index.${build}.js`,

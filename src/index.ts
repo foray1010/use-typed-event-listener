@@ -62,7 +62,7 @@ function useEventListener<
     if (!element) return undefined
 
     // to avoid keep updating listener in DOM
-    const wrappedListener: typeof listenerRef.current = evt =>
+    const wrappedListener: typeof listenerRef.current = (evt) =>
       listenerRef.current.call(element, evt)
 
     element.addEventListener(eventType, wrappedListener, memorizedOptions)
