@@ -25,81 +25,81 @@ yarn add use-typed-event-listener
 useEventListener(element, eventType, listener[, options])
 ```
 
--   `element` can be `window`, `document` or any `HTMLElement`. If it is `undefined`, no event will not be bound
+- `element` can be `window`, `document` or any `HTMLElement`. If it is `undefined`, no event will not be bound
 
--   `eventType` is a case-sensitive string representing the [event type](https://developer.mozilla.org/en-US/docs/Web/Events) to listen for
+- `eventType` is a case-sensitive string representing the [event type](https://developer.mozilla.org/en-US/docs/Web/Events) to listen for
 
--   `listener` is the callback function when an event of `eventType` occurs
+- `listener` is the callback function when an event of `eventType` occurs
 
--   `options` _(optional)_ see <https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Parameters>
+- `options` _(optional)_ see <https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Parameters>
 
 ## Usage
 
--   `listener` typings will be automatically casted based on `element` and `eventType`
+- `listener` typings will be automatically casted based on `element` and `eventType`
 
-    ```tsx
-    import useEventListener from 'use-typed-event-listener'
+  ```tsx
+  import useEventListener from 'use-typed-event-listener'
 
-    export default (props: Props) => {
-        // typings for `event` will be `MouseEvent` as this package recognizes the `click` event type
-        useEventListener(window, 'click', event => {
-            console.log(event.buttons)
-        })
+  export default (props: Props) => {
+    // typings for `event` will be `MouseEvent` as this package recognizes the `click` event type
+    useEventListener(window, 'click', (event) => {
+      console.log(event.buttons)
+    })
 
-        return <SomeComponent />
-    }
-    ```
+    return <SomeComponent />
+  }
+  ```
 
--   No need to avoid passing new reference to `listener` or `options`, they are memorized and will not trigger the hook again
+- No need to avoid passing new reference to `listener` or `options`, they are memorized and will not trigger the hook again
 
-    ```tsx
-    import useEventListener from 'use-typed-event-listener'
+  ```tsx
+  import useEventListener from 'use-typed-event-listener'
 
-    export default (props: Props) => {
-        // this hook will only run once
-        useEventListener(window, 'click', event => {}, {
-            capture: true,
-        })
+  export default (props: Props) => {
+    // this hook will only run once
+    useEventListener(window, 'click', (event) => {}, {
+      capture: true,
+    })
 
-        return <SomeComponent />
-    }
-    ```
+    return <SomeComponent />
+  }
+  ```
 
--   Prevent casting `eventType` as `string`
+- Prevent casting `eventType` as `string`
 
-    ```tsx
-    import useEventListener from 'use-typed-event-listener'
+  ```tsx
+  import useEventListener from 'use-typed-event-listener'
 
-    export default (props: Props) => {
-        const eventType: string = 'click'
+  export default (props: Props) => {
+    const eventType: string = 'click'
 
-        useEventListener(window, eventType, event => {
-            // as `eventType` is a wild card string, `event` will fallback to general `Event` type
-            // this line will throw `Property 'buttons' does not exist on type 'Event'.ts(2339)`
-            console.log(event.buttons)
-        })
+    useEventListener(window, eventType, (event) => {
+      // as `eventType` is a wild card string, `event` will fallback to general `Event` type
+      // this line will throw `Property 'buttons' does not exist on type 'Event'.ts(2339)`
+      console.log(event.buttons)
+    })
 
-        return <SomeComponent />
-    }
-    ```
+    return <SomeComponent />
+  }
+  ```
 
--   Checks if element support this event type
+- Checks if element support this event type
 
-    ```tsx
-    import useEventListener from 'use-typed-event-listener'
+  ```tsx
+  import useEventListener from 'use-typed-event-listener'
 
-    export default (props: Props) => {
-        // this pass as HTMLElement supports copy event
-        useEventListener(document.body, 'copy', event => {
-            console.log(event.clipboardData)
-        })
+  export default (props: Props) => {
+    // this pass as HTMLElement supports copy event
+    useEventListener(document.body, 'copy', (event) => {
+      console.log(event.clipboardData)
+    })
 
-        // as Window doesn't support copy event
-        useEventListener(window, 'copy', event => {
-            // this throws `Property 'clipboardData' does not exist on type 'Event'.ts(2339)`
-            console.log(event.clipboardData)
-        })
+    // as Window doesn't support copy event
+    useEventListener(window, 'copy', (event) => {
+      // this throws `Property 'clipboardData' does not exist on type 'Event'.ts(2339)`
+      console.log(event.clipboardData)
+    })
 
-        return <SomeComponent />
-    }
-    ```
+    return <SomeComponent />
+  }
+  ```
