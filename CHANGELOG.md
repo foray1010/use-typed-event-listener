@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/foray1010/use-typed-event-listener/compare/v1.3.1...v2.0.0) (2020-04-16)
+
+### ⚠ BREAKING CHANGES
+
+- drop nodejs < 10.13
+
+### Bug Fixes
+
+- **typescript:** does not provide correct type to work with react ref ([77d177c](https://github.com/foray1010/use-typed-event-listener/commit/77d177c21057d763514680a00f1f7e3a66aa6728))
+
+* require nodejs 10 ([30d9bf5](https://github.com/foray1010/use-typed-event-listener/commit/30d9bf5c99057a795885179cff4df14632016617))
+
 ### [1.3.1](https://github.com/foray1010/use-typed-event-listener/compare/v1.3.0...v1.3.1) (2019-06-05)
 
 ### Bug Fixes
