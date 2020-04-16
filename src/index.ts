@@ -12,25 +12,25 @@ const useShallowMemorize = <T>(value: T): T => {
 }
 
 function useEventListener<KD extends keyof DocumentEventMap>(
-  element: Document | void,
+  element: Document | null | void,
   eventType: KD,
   listener: (this: Document, evt: DocumentEventMap[KD]) => void,
   options?: boolean | AddEventListenerOptions,
 ): void
 function useEventListener<KH extends keyof HTMLElementEventMap>(
-  element: HTMLElement | void,
+  element: HTMLElement | null | void,
   eventType: KH,
   listener: (this: HTMLElement, evt: HTMLElementEventMap[KH]) => void,
   options?: boolean | AddEventListenerOptions,
 ): void
 function useEventListener<KW extends keyof WindowEventMap>(
-  element: Window | void,
+  element: Window | null | void,
   eventType: KW,
   listener: (this: Window, evt: WindowEventMap[KW]) => void,
   options?: boolean | AddEventListenerOptions,
 ): void
 function useEventListener(
-  element: Document | HTMLElement | Window | void,
+  element: Document | HTMLElement | Window | null | void,
   eventType: string,
   listener: (evt: Event) => void,
   options?: boolean | AddEventListenerOptions,
@@ -41,7 +41,7 @@ function useEventListener<
   KH extends keyof HTMLElementEventMap,
   KW extends keyof WindowEventMap
 >(
-  element: Document | HTMLElement | Window | void,
+  element: Document | HTMLElement | Window | null | void,
   eventType: KD | KH | KW | string,
   listener: (
     this: typeof element,

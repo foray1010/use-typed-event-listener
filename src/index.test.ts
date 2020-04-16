@@ -1,5 +1,6 @@
 import { fireEvent } from '@testing-library/dom'
 import { renderHook } from '@testing-library/react-hooks'
+import * as React from 'react'
 
 import useEventListener from '.'
 
@@ -164,6 +165,27 @@ describe('useEventListener', () => {
 
     fireEvent.click(document.body)
     expect(eventListener).toHaveBeenCalledTimes(1)
+  })
+
+  it('should support react ref', () => {
+    const { result: refResult } = renderHook(() =>
+      React.useRef<HTMLDivElement>(null),
+    )
+    const ref = refResult.current
+
+    const { result } = renderHook(() => {
+      useEventListener(ref.current, 'click', () => {})
+    })
+
+    expect(result.error).toBe(undefined)
+  })
+
+  it('should pass if element is null', () => {
+    const { result } = renderHook(() => {
+      useEventListener(null, 'click', () => {})
+    })
+
+    expect(result.error).toBe(undefined)
   })
 
   it('should pass if element is undefined', () => {
