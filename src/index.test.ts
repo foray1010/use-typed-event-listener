@@ -1,4 +1,4 @@
-import { fireEvent } from '@testing-library/dom'
+import { fireEvent } from '@testing-library/react'
 import { renderHook } from '@testing-library/react-hooks'
 import * as React from 'react'
 
