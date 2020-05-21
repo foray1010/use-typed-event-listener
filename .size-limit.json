@@ -1,10 +1,10 @@
 [
   {
     "path": "dist/index.cjs.js",
-    "limit": "1132 B"
+    "limit": "1124 B"
   },
   {
     "path": "dist/index.esm.js",
-    "limit": "1058 B"
+    "limit": "1044 B"
   }
 ]
