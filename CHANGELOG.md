@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/foray1010/use-typed-event-listener/compare/v2.0.0...v2.0.1) (2020-05-21)
+
+### Bug Fixes
+
+- lower bundle size by using @babel/runtime ([799389e](https://github.com/foray1010/use-typed-event-listener/commit/799389ee6cac419a206c2d7cf6b0e6aac08bc084))
+
 ## [2.0.0](https://github.com/foray1010/use-typed-event-listener/compare/v1.3.1...v2.0.0) (2020-04-16)
 
 ### ⚠ BREAKING CHANGES
