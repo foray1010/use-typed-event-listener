@@ -1,5 +1,5 @@
 // @ts-ignore
-import babel from '@rollup/plugin-babel'
+import babel, { getBabelOutputPlugin } from '@rollup/plugin-babel'
 import replace from '@rollup/plugin-replace'
 import dts from 'rollup-plugin-dts'
 import { terser } from 'rollup-plugin-terser'
@@ -13,6 +13,7 @@ export default [
     output: {
       file: `dist/index.${build}.js`,
       format: build,
+      plugins: [getBabelOutputPlugin()],
       sourcemap: true,
     },
     plugins: [
