@@ -27,19 +27,19 @@
   ],
   "scripts": {
     "prebuild": "yarn clean:build",
-    "build": "tsc && rollup -c rollup.config.ts",
-    "ci": "npm-run-all -p build lint:* type:* test && size-limit",
+    "build": "tsc --project tsconfig.build.json && rollup -c rollup.config.ts",
+    "ci": "npm-run-all -p 'lint:*' 'type:*' && yarn test && yarn build && size-limit",
     "clean:build": "shx rm -rf dist/ build/dts/",
     "eslint": "eslint --ext=cjs,js,mjs,ts,tsx --ignore-path=node_modules/@foray1010/eslint-config/eslintignore",
-    "lint": "npm-run-all -p lint:*",
+    "lint": "npm-run-all -p 'lint:*'",
     "lint:js": "yarn eslint .",
     "lint:md": "yarn remark .",
     "prepublishOnly": "yarn ci",
     "prettier": "prettier --ignore-path=node_modules/@foray1010/prettier-config/prettierignore",
     "remark": "remark --frail --ignore-path=node_modules/@foray1010/remark-preset/remarkignore --ignore-path-resolve-from=cwd",
     "test": "jest --config .jestrc.json",
-    "type:check": "tsc --noEmit --project ./tsconfig.typecheck.json",
-    "type:coverage": "type-coverage --strict --at-least 100 --detail --ignore-catch"
+    "type:check": "tsc",
+    "type:coverage": "type-coverage --strict --at-least 99.7 --detail --ignore-catch"
   },
   "dependencies": {
     "@babel/runtime": "^7.10.2",
@@ -53,7 +53,7 @@
     "@foray1010/eslint-config": "3.0.4",
     "@foray1010/prettier-config": "4.0.1",
     "@foray1010/remark-preset": "3.0.2",
-    "@foray1010/tsconfig": "1.1.0",
+    "@foray1010/tsconfig": "2.0.0",
     "@rollup/plugin-babel": "5.0.2",
     "@rollup/plugin-replace": "2.2.1",
     "@size-limit/preset-small-lib": "4.5.0",
