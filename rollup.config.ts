@@ -22,6 +22,7 @@ const rollupOptions: RollupOptions[] = [
           'fast-equals': `fast-equals/${fastEqualsPkg.main}`,
         },
         plugins: [getBabelOutputPlugin()],
+        preferConst: true,
         sourcemap: true,
       },
       {
