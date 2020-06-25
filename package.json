@@ -54,7 +54,7 @@
     "@foray1010/prettier-config": "4.0.2",
     "@foray1010/remark-preset": "3.0.3",
     "@foray1010/tsconfig": "2.1.0",
-    "@rollup/plugin-babel": "5.0.3",
+    "@rollup/plugin-babel": "5.0.4",
     "@size-limit/preset-small-lib": "4.5.1",
     "@testing-library/react": "10.3.0",
     "@testing-library/react-hooks": "3.3.0",
