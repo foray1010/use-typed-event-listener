@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.2](https://github.com/foray1010/use-typed-event-listener/compare/v2.0.1...v2.0.2) (2020-06-26)
+
+### Bug Fixes
+
+- allow undefined element ([81ba810](https://github.com/foray1010/use-typed-event-listener/commit/81ba810da7d2020d58a180cd0ef77b84ee4fb9e7))
+
 ### [2.0.1](https://github.com/foray1010/use-typed-event-listener/compare/v2.0.0...v2.0.1) (2020-05-21)
 
 ### Bug Fixes
