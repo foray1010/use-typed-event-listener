@@ -1,4 +1,3 @@
-// @ts-ignore
 import babel, { getBabelOutputPlugin } from '@rollup/plugin-babel'
 import fastEqualsPkg from 'fast-equals/package.json'
 import type { RollupOptions } from 'rollup'
