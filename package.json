@@ -55,7 +55,7 @@
     "@foray1010/remark-preset": "3.1.0",
     "@foray1010/tsconfig": "2.1.0",
     "@rollup/plugin-babel": "5.1.0",
-    "@size-limit/preset-small-lib": "4.5.4",
+    "@size-limit/preset-small-lib": "4.5.5",
     "@testing-library/react": "10.4.7",
     "@testing-library/react-hooks": "3.3.0",
     "@types/jest": "26.0.4",
@@ -78,7 +78,7 @@
     "rollup-plugin-dts": "1.4.8",
     "rollup-plugin-terser": "6.1.0",
     "shx": "0.3.2",
-    "size-limit": "4.5.4",
+    "size-limit": "4.5.5",
     "ts-node": "8.10.2",
     "type-coverage": "2.8.4",
     "typescript": "3.9.6"
