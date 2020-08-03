@@ -1,6 +1,6 @@
 {
   "name": "use-typed-event-listener",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "React Hook for DOM event listeners with TypeScript supported",
   "keywords": [
     "document",

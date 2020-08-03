@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/foray1010/use-typed-event-listener/compare/v2.0.2...v3.0.0) (2020-08-03)
+
+### ⚠ BREAKING CHANGES
+
+- move default export in commonjs build to the .default property
+
+### Features
+
+- move default export in commonjs build to the .default property ([72820c1](https://github.com/foray1010/use-typed-event-listener/commit/72820c11ac251f5dad4cacafb8a0b12df4f55d92))
+
 ### [2.0.2](https://github.com/foray1010/use-typed-event-listener/compare/v2.0.1...v2.0.2) (2020-06-26)
 
 ### Bug Fixes
