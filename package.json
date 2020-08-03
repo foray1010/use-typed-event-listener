@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.10.2",
-    "fast-equals": "^2.0.0"
+    "use-deep-compare": "^1.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.11.0",

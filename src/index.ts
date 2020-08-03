@@ -1,15 +1,5 @@
-import { shallowEqual } from 'fast-equals'
 import * as React from 'react'
-
-const useShallowMemorize = <T>(value: T): T => {
-  const ref = React.useRef<T>(value)
-
-  if (!shallowEqual(value, ref.current)) {
-    ref.current = value
-  }
-
-  return ref.current
-}
+import { useDeepCompareMemo } from 'use-deep-compare'
 
 function useEventListener<KD extends keyof DocumentEventMap>(
   element: Document | null | undefined,
@@ -56,7 +46,7 @@ function useEventListener<
   const listenerRef = React.useRef(listener)
   listenerRef.current = listener
 
-  const memorizedOptions = useShallowMemorize(options)
+  const memorizedOptions = useDeepCompareMemo(() => options, [options])
 
   React.useEffect(() => {
     if (!element) return undefined

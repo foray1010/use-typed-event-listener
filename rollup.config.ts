@@ -1,5 +1,4 @@
 import babel, { getBabelOutputPlugin } from '@rollup/plugin-babel'
-import fastEqualsPkg from 'fast-equals/package.json'
 import type { RollupOptions } from 'rollup'
 import dts from 'rollup-plugin-dts'
 import { terser } from 'rollup-plugin-terser'
@@ -17,9 +16,6 @@ const rollupOptions: RollupOptions[] = [
         dir: outputDir,
         entryFileNames: '[name].[format].js',
         format: 'cjs',
-        paths: {
-          'fast-equals': `fast-equals/${fastEqualsPkg.main}`,
-        },
         plugins: [getBabelOutputPlugin()],
         preferConst: true,
         sourcemap: true,
@@ -28,9 +24,6 @@ const rollupOptions: RollupOptions[] = [
         dir: outputDir,
         entryFileNames: '[name].esm.js',
         format: 'esm',
-        paths: {
-          'fast-equals': `fast-equals/${fastEqualsPkg.module}`,
-        },
         plugins: [getBabelOutputPlugin()],
         sourcemap: true,
       },
