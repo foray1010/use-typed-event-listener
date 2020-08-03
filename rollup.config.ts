@@ -15,6 +15,7 @@ const rollupOptions: RollupOptions[] = [
       {
         dir: outputDir,
         entryFileNames: '[name].[format].js',
+        exports: 'named',
         format: 'cjs',
         plugins: [getBabelOutputPlugin()],
         preferConst: true,
@@ -23,6 +24,7 @@ const rollupOptions: RollupOptions[] = [
       {
         dir: outputDir,
         entryFileNames: '[name].esm.js',
+        exports: 'named',
         format: 'esm',
         plugins: [getBabelOutputPlugin()],
         sourcemap: true,
