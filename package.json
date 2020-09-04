@@ -63,7 +63,7 @@
     "@types/react-dom": "16.9.8",
     "@types/testing-library__dom": "7.5.0",
     "@types/testing-library__react-hooks": "3.4.0",
-    "eslint": "7.7.0",
+    "eslint": "7.8.1",
     "husky": "4.2.5",
     "ignore-sync": "2.0.1",
     "jest": "26.4.2",
