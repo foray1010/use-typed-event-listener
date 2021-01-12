@@ -62,8 +62,6 @@
     "@types/jest": "26.0.20",
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
-    "@types/testing-library__dom": "7.5.0",
-    "@types/testing-library__react-hooks": "3.4.1",
     "eslint": "7.17.0",
     "husky": "4.3.7",
     "ignore-sync": "3.0.1",
