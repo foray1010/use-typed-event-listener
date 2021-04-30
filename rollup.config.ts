@@ -14,7 +14,7 @@ const rollupOptions: RollupOptions[] = [
     output: [
       {
         dir: outputDir,
-        entryFileNames: '[name].[format].js',
+        entryFileNames: '[name].cjs',
         exports: 'named',
         format: 'cjs',
         plugins: [getBabelOutputPlugin()],

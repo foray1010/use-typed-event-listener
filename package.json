@@ -20,9 +20,13 @@
   "license": "MIT",
   "author": "foray1010",
   "sideEffects": false,
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.esm.js",
+    "require": "./dist/index.cjs"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.esm.js",
+  "typings": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -90,6 +94,6 @@
     "typescript": ">=4.1.2"
   },
   "engines": {
-    "node": ">=10.13"
+    "node": ">=12.13"
   }
 }
