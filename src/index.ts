@@ -29,7 +29,7 @@ function useEventListener(
 function useEventListener<
   KD extends keyof DocumentEventMap,
   KH extends keyof HTMLElementEventMap,
-  KW extends keyof WindowEventMap
+  KW extends keyof WindowEventMap,
 >(
   element: Document | HTMLElement | Window | null | undefined,
   eventType: KD | KH | KW | string,
