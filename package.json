@@ -28,7 +28,8 @@
   "module": "./dist/index.esm.js",
   "typings": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "*.md"
   ],
   "scripts": {
     "prebuild": "yarn clean:build",
