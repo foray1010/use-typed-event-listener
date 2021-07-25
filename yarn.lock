@@ -6383,9 +6383,9 @@ merge2@^1.2.3, merge2@^1.3.0:
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
 mico-spinner@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/mico-spinner/-/mico-spinner-1.1.1.tgz#b904cf4dc1ae247d9bff24b969d8bcbb08371f5d"
-  integrity sha512-b9F3Qx9l6fO141+FbR9hqRUJ15p4bGVsqgXiO/noxxXZmN+hYZVCuWd4LEubadrVkw0eIYAJDXWo0ZYGoLrmfg==
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/mico-spinner/-/mico-spinner-1.2.1.tgz#653f8b0d075729d383c58664e1c4bd929b740b68"
+  integrity sha512-Ub+oCJ7B223Hqj08iAXHWm7aPIe7QvYTbsMFSDVhMdZCAfByvOdpXJY6ahPQHMRqKmTNQYa0m9xDiHua6HIBXQ==
   dependencies:
     colorette "^1.2.2"
 
