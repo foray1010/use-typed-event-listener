@@ -2,10 +2,10 @@ import type { Config } from '@jest/types'
 
 const config: Config.InitialOptions = {
   collectCoverage: true,
-  collectCoverageFrom: ['<rootDir>/src/**/*.{cjs,js,mjs,ts,tsx}'],
+  collectCoverageFrom: ['<rootDir>/src/**/*.{cjs,cts,js,mjs,mts,ts,tsx}'],
   coverageReporters: ['lcov', 'text-summary'],
   testEnvironment: 'jsdom',
-  testMatch: ['**/*.{spec,test}.{cjs,js,mjs,ts,tsx}'],
+  testMatch: ['**/*.{spec,test}.{cjs,cts,js,mjs,mts,ts,tsx}'],
 }
 
 export default config
