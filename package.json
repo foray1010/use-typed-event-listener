@@ -70,7 +70,7 @@
     "@types/react": "17.0.30",
     "@types/react-dom": "17.0.10",
     "eslint": "7.32.0",
-    "husky": "7.0.2",
+    "husky": "7.0.4",
     "ignore-sync": "4.0.0",
     "jest": "27.3.1",
     "lint-staged": "11.2.3",
