@@ -1,3 +1,5 @@
+/* eslint-disable testing-library/prefer-user-event */
+
 import { fireEvent } from '@testing-library/react'
 import { renderHook } from '@testing-library/react-hooks'
 import * as React from 'react'
