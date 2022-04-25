@@ -4,7 +4,7 @@ const config: Config.InitialOptions = {
   collectCoverage: true,
   collectCoverageFrom: ['<rootDir>/src/**/*.{cjs,cts,js,mjs,mts,ts,tsx}'],
   coverageReporters: ['lcov', 'text-summary'],
-  testEnvironment: 'jsdom',
+  testEnvironment: 'jest-environment-jsdom',
   testMatch: ['**/*.{spec,test}.{cjs,cts,js,mjs,mts,ts,tsx}'],
 }
 
