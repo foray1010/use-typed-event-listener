@@ -179,7 +179,7 @@ describe('useEventListener', () => {
       useEventListener(ref.current, 'click', () => {})
     })
 
-    expect(result.error).toBe(undefined)
+    expect(result.error).toBeUndefined()
   })
 
   it('should pass if element is null', () => {
@@ -187,7 +187,7 @@ describe('useEventListener', () => {
       useEventListener(null, 'click', () => {})
     })
 
-    expect(result.error).toBe(undefined)
+    expect(result.error).toBeUndefined()
   })
 
   it('should pass if element is undefined', () => {
@@ -195,6 +195,6 @@ describe('useEventListener', () => {
       useEventListener(undefined, 'click', () => {})
     })
 
-    expect(result.error).toBe(undefined)
+    expect(result.error).toBeUndefined()
   })
 })
