@@ -67,7 +67,7 @@
     "@testing-library/react": "13.2.0",
     "@testing-library/react-hooks": "8.0.0",
     "@types/jest": "27.5.0",
-    "@types/react": "18.0.8",
+    "@types/react": "18.0.9",
     "eslint": "8.14.0",
     "husky": "7.0.2",
     "ignore-sync": "5.0.1",
