@@ -96,19 +96,16 @@ describe('useEventListener', () => {
   })
 
   it('should bind `this` to listener', () => {
-    const obj = {
-      eventListener() {
-        return this
-      },
-    }
-    jest.spyOn(obj, 'eventListener')
+    const eventListener = jest.fn(function eventListener(this: unknown) {
+      return this
+    })
 
     renderHook(() => {
-      useEventListener(window, 'click', obj.eventListener)
+      useEventListener(window, 'click', eventListener)
     })
 
     fireEvent.click(window)
-    expect(obj.eventListener).toHaveReturnedWith(window)
+    expect(eventListener).toHaveReturnedWith(window)
   })
 
   it('should update event listener without re-binding', () => {
