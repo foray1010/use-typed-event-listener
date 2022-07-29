@@ -1464,10 +1464,10 @@
     remark-preset-prettier "^1.0.0"
     remark-validate-links "^11.0.0"
 
-"@foray1010/tsconfig@7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@foray1010/tsconfig/-/tsconfig-7.0.1.tgz#ab37ae3b107f22af0bf23ddb568e73ac58a9813d"
-  integrity sha512-9ay0SLMJp+nEOa5vPTZJ59Z4f45M7j/H+9ifPAyNgCBva9MsVhsEhaVuul+SwksiZVHvgVlOArmPvR2MqJkqKQ==
+"@foray1010/tsconfig@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@foray1010/tsconfig/-/tsconfig-8.0.0.tgz#6073d52cd8d7ddebd84cba5a86323d28fb644be9"
+  integrity sha512-zdWh8XO+2VUrDxQnJ8NIrLyBHsNXcNd+mKPZG4LowMdPKDHyKk5LspGBnPQjXtyaKZ6QQcUOvGhDnD4hDFe9/w==
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
