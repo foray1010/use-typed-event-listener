@@ -7,5 +7,4 @@ const config: Config = {
   testEnvironment: 'jest-environment-jsdom',
   testMatch: ['**/*.{spec,test}.{cjs,cts,js,mjs,mts,ts,tsx}'],
 }
-
 export default config
