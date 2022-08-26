@@ -1222,10 +1222,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@foray1010/babel-preset@9.0.1":
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/@foray1010/babel-preset/-/babel-preset-9.0.1.tgz#c459c95b2418d937744a99cd53f70ec4e6376648"
-  integrity sha512-6rO/bvh2q6ia/NL92xtgTTIgjrivc9+zBtHS0qFVnQnIw+Zzk8waq5veoxsygeQW0OaYGHxnBs3l3eCqdUdtzA==
+"@foray1010/babel-preset@9.0.2":
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/@foray1010/babel-preset/-/babel-preset-9.0.2.tgz#53346f2b5393d68fa6afa391ffc7267a46a3719a"
+  integrity sha512-92P6OnVoWNzqiDf+3l6HOd5b2aeXSJg0jqeREAVHVIar8EaCcBxfEtQKwmGJUtpwbGf6ZjIUvnGyX+EOUFv3AA==
   dependencies:
     "@babel/helper-plugin-utils" "^7.13.0"
     "@babel/plugin-transform-react-constant-elements" "^7.13.13"
@@ -1234,24 +1234,24 @@
     "@babel/preset-env" "^7.13.15"
     "@babel/preset-react" "^7.13.13"
     "@babel/preset-typescript" "^7.13.0"
-    "@foray1010/common-presets-utils" "^5.0.1"
+    "@foray1010/common-presets-utils" "^5.0.2"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
     browserslist "^4.16.5"
     semver "^7.3.5"
 
-"@foray1010/common-presets-utils@^5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@foray1010/common-presets-utils/-/common-presets-utils-5.0.1.tgz#234bceef0ecc7cfad6006213e2fe58af70b44e8a"
-  integrity sha512-L5A5M9pYYXurUceAj/pcozMKJF3pzaGqW5mE8y2FhoYuotk0MtysBop9v5R0xRl2dvsR1wO9vRCj3cKcI66Cig==
+"@foray1010/common-presets-utils@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@foray1010/common-presets-utils/-/common-presets-utils-5.0.2.tgz#21914e925e00adfb50b2caf422ab8b7d5221023b"
+  integrity sha512-TWgfGjg+9jAYKPWLaYwIkAwgk6QcwG3XzO5oSu9YqHIUCh/gVts5WeyBUVwiFfrrM9+yEK5zfULcPVMIylvhNw==
   dependencies:
     read-pkg-up "^7.0.1"
 
-"@foray1010/eslint-config@7.3.1":
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/@foray1010/eslint-config/-/eslint-config-7.3.1.tgz#96261f009a03e0fd10be9b0c0e42b7a3dc72b3ef"
-  integrity sha512-Hrwlm1skEULySpVoD0zEujyA6Br815PoH2Qsg7hh/Gi2JjEVBVF7YeQ0JVvUK1cbp8YU8U9Nj1tO26wAQizPqQ==
+"@foray1010/eslint-config@7.3.4":
+  version "7.3.4"
+  resolved "https://registry.yarnpkg.com/@foray1010/eslint-config/-/eslint-config-7.3.4.tgz#40a08d578dd7e262a1a55745620819bb3f231939"
+  integrity sha512-PO5cKnXFDYeZ9tBCdeZEnFYyJCfLKRBpvyhxzAYSUs6KLEd1EtNAYnx1FOEZoOJgQ0//a8rEOS7m97qaM3gvog==
   dependencies:
-    "@foray1010/common-presets-utils" "^5.0.1"
+    "@foray1010/common-presets-utils" "^5.0.2"
     "@typescript-eslint/eslint-plugin" "^5.13.0"
     "@typescript-eslint/parser" "^5.13.0"
     confusing-browser-globals "^1.0.10"
@@ -1274,30 +1274,30 @@
   resolved "https://registry.yarnpkg.com/@foray1010/jest-preset/-/jest-preset-2.0.0.tgz#6263cd907d30f6b18873a0819e8cacae514b7805"
   integrity sha512-OGWfudDF8n4kofKznxYjr95U2Zy/peSZ4ybwlg8xm1OcsgeLFxqRUB1D+SZLcx2DJx6Sh9k5wX/BuZFyOnMf2w==
 
-"@foray1010/prettier-config@7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@foray1010/prettier-config/-/prettier-config-7.0.1.tgz#5b9a086f6dae3eebd199b6581dfc3555d67176f2"
-  integrity sha512-ZmY/7EW6Udbw+Fg80J5xU1jediYuSfgHZ6cSl1I+sTokgfN2DSomL9UNtIzDTi2gMDcSrC4RQxoI/YsoeJR5fQ==
+"@foray1010/prettier-config@7.0.3":
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/@foray1010/prettier-config/-/prettier-config-7.0.3.tgz#e224153f6469fc697bdab6a29410efb7d34fc009"
+  integrity sha512-OK+hp8T7xEHTWiV8I3Sw3X5pip8h21uDcRFQIUIM0UIOI42A/QKpoZb7oh7kidUyG3FG8AV6JDDDtFlsc52lHw==
   dependencies:
     prettier-plugin-packagejson "^2.2.5"
 
-"@foray1010/remark-preset@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@foray1010/remark-preset/-/remark-preset-7.0.0.tgz#70810c2883638b22e8c6c0f1b8990aacd3067476"
-  integrity sha512-uYdx+b3jNvMglVgM3GbVpnxFcBu0LgjtWYIAFQua7jj/guInbi+nPgSl/V0SmoCJC6umRyP5PCULzgwxtSPSCA==
+"@foray1010/remark-preset@7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@foray1010/remark-preset/-/remark-preset-7.0.2.tgz#18ad03d68fc70513b8639691337dbff75dfa5ae7"
+  integrity sha512-xJ6rn7OHWwN8eHEnABc6op40huPE78wrAMbC5yqMyjB/Utz8U9YA7VmTO8BeoXH0UfvDMlYlyVZvpOk4vu6KDQ==
   dependencies:
     remark-frontmatter "^4.0.0"
     remark-lint-no-dead-urls "^1.1.0"
     remark-preset-lint-consistent "^5.0.0"
     remark-preset-lint-markdown-style-guide "^5.0.0"
     remark-preset-lint-recommended "^6.0.0"
-    remark-preset-prettier "1.0.0"
+    remark-preset-prettier "^1.0.2"
     remark-validate-links "^12.0.0"
 
-"@foray1010/tsconfig@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@foray1010/tsconfig/-/tsconfig-8.0.0.tgz#6073d52cd8d7ddebd84cba5a86323d28fb644be9"
-  integrity sha512-zdWh8XO+2VUrDxQnJ8NIrLyBHsNXcNd+mKPZG4LowMdPKDHyKk5LspGBnPQjXtyaKZ6QQcUOvGhDnD4hDFe9/w==
+"@foray1010/tsconfig@8.0.2":
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/@foray1010/tsconfig/-/tsconfig-8.0.2.tgz#eedacff0ab79c62e5e951a6b43c9086f7aecd2e6"
+  integrity sha512-nZEfTZMO/dHC37PYWt7Ft/4gssiqmn3qmgtzX58+lrZDRXWrgKR3EnHxC8cy6q47vakPYQ1/AyPi1wYuPq/pqQ==
 
 "@humanwhocodes/config-array@^0.10.4":
   version "0.10.4"
@@ -1601,15 +1601,7 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@jridgewell/trace-mapping@^0.3.12", "@jridgewell/trace-mapping@^0.3.9":
-  version "0.3.14"
-  resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.14.tgz#b231a081d8f66796e475ad588a1ef473112701ed"
-  integrity sha512-bJWEfQ9lPTvm3SneWwRFVLzrh6nhjwqw7TUFFBEMzwvg7t7PCDenf2lDwqo4NQXzdpgBXyFgDWnQA+2vkruksQ==
-  dependencies:
-    "@jridgewell/resolve-uri" "^3.0.3"
-    "@jridgewell/sourcemap-codec" "^1.4.10"
-
-"@jridgewell/trace-mapping@^0.3.15":
+"@jridgewell/trace-mapping@^0.3.12", "@jridgewell/trace-mapping@^0.3.15", "@jridgewell/trace-mapping@^0.3.9":
   version "0.3.15"
   resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.15.tgz#aba35c48a38d3fd84b37e66c9c0423f9744f9774"
   integrity sha512-oWZNOULl+UbhsgB51uuZzglikfIKSUBO/M9W2OfEjn7cmqoAiCgmv9lyACTUacZwBz0ITnJ2NqjU8Tx0DHL88g==
@@ -2005,16 +1997,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
-  version "18.0.16"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.16.tgz#8de9bf7feebfa520777e8d30815070b39cb663c0"
-  integrity sha512-3vX1dzVucqc2nhXtzyaParTIIRZeNbisRqLE7QdeLomVybEyeiuAouzZXgz71P+2kbJOqj3dy0fzoATg2I06GQ==
-  dependencies:
-    "@types/prop-types" "*"
-    "@types/scheduler" "*"
-    csstype "^3.0.2"
-
-"@types/react@18.0.17":
+"@types/react@*", "@types/react@18.0.17":
   version "18.0.17"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.17.tgz#4583d9c322d67efe4b39a935d223edcc7050ccf4"
   integrity sha512-38ETy4tL+rn4uQQi7mB81G7V1g0u2ryquNmsVIOKUAEIDK+3CUjZ6rSRpdvS99dNBnkLFL83qfmtLacGOTIhwQ==
@@ -7403,10 +7386,10 @@ remark-preset-lint-recommended@^6.0.0:
     remark-lint-ordered-list-marker-style "^3.0.0"
     unified "^10.0.0"
 
-remark-preset-prettier@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/remark-preset-prettier/-/remark-preset-prettier-1.0.0.tgz#e57d9c499e6a2364953285c90dc230828874381c"
-  integrity sha512-e0VvU1J7WJSl5WsejEPKgJzTE84A3NNm/S3oA75fkw9p/k/IPu1dr0vEO4FdeoaqsLlG0xZ544E+kQgmiSlG0g==
+remark-preset-prettier@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/remark-preset-prettier/-/remark-preset-prettier-1.0.2.tgz#57146d9128447840690ae25c1797c34d1883a40f"
+  integrity sha512-GiTOnOh5NyG0XesZqNLzAqXqs3Z/HFmStcPZP/ZMIQvHOPGmv6zDixItNZeVtDDDWgn0J6BuALI/mv0m4pA6vQ==
   dependencies:
     remark-lint-blank-lines-1-0-2 "*"
     remark-lint-blockquote-indentation "*"
