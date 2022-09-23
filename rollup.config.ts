@@ -1,4 +1,4 @@
-import babel, { getBabelOutputPlugin } from '@rollup/plugin-babel'
+import { babel, getBabelOutputPlugin } from '@rollup/plugin-babel'
 import type { RollupOptions } from 'rollup'
 import dts from 'rollup-plugin-dts'
 import { terser } from 'rollup-plugin-terser'
