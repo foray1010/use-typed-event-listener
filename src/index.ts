@@ -5,25 +5,25 @@ function useEventListener<KD extends keyof DocumentEventMap>(
   element: Document | null | undefined,
   eventType: KD,
   listener: (this: Document, evt: DocumentEventMap[KD]) => void,
-  options?: boolean | AddEventListenerOptions,
+  options?: boolean | AddEventListenerOptions | undefined,
 ): void
 function useEventListener<KH extends keyof HTMLElementEventMap>(
   element: HTMLElement | null | undefined,
   eventType: KH,
   listener: (this: HTMLElement, evt: HTMLElementEventMap[KH]) => void,
-  options?: boolean | AddEventListenerOptions,
+  options?: boolean | AddEventListenerOptions | undefined,
 ): void
 function useEventListener<KW extends keyof WindowEventMap>(
   element: Window | null | undefined,
   eventType: KW,
   listener: (this: Window, evt: WindowEventMap[KW]) => void,
-  options?: boolean | AddEventListenerOptions,
+  options?: boolean | AddEventListenerOptions | undefined,
 ): void
 function useEventListener(
   element: Document | HTMLElement | Window | null | undefined,
   eventType: string,
   listener: (evt: Event) => void,
-  options?: boolean | AddEventListenerOptions,
+  options?: boolean | AddEventListenerOptions | undefined,
 ): void
 
 function useEventListener<
@@ -41,7 +41,7 @@ function useEventListener<
       | WindowEventMap[KW]
       | Event,
   ) => void,
-  options?: boolean | AddEventListenerOptions,
+  options?: boolean | AddEventListenerOptions | undefined,
 ): void {
   const listenerRef = React.useRef(listener)
   listenerRef.current = listener
