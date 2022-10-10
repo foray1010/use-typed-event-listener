@@ -67,7 +67,7 @@
     "@size-limit/preset-small-lib": "8.1.0",
     "@testing-library/react": "13.4.0",
     "@testing-library/react-hooks": "8.0.1",
-    "@types/jest": "29.1.1",
+    "@types/jest": "29.1.2",
     "@types/react": "18.0.21",
     "eslint": "8.24.0",
     "husky": "8.0.1",
