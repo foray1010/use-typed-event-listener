@@ -63,7 +63,7 @@
     "@foray1010/prettier-config": "7.0.5",
     "@foray1010/remark-preset": "7.0.4",
     "@foray1010/tsconfig": "8.1.0",
-    "@rollup/plugin-babel": "5.3.1",
+    "@rollup/plugin-babel": "6.0.0",
     "@size-limit/preset-small-lib": "8.1.0",
     "@testing-library/react": "13.4.0",
     "@testing-library/react-hooks": "8.0.1",
