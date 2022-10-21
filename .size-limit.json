@@ -4,7 +4,7 @@
     "limit": "829 B"
   },
   {
-    "path": "dist/index.esm.js",
-    "limit": "729 B"
+    "path": "dist/index.mjs",
+    "limit": "732 B"
   }
 ]

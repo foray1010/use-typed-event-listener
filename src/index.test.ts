@@ -4,7 +4,7 @@ import { fireEvent } from '@testing-library/react'
 import { renderHook } from '@testing-library/react-hooks'
 import * as React from 'react'
 
-import useEventListener from '.'
+import useEventListener from './index.js'
 
 describe('useEventListener', () => {
   it('should bind event listener and call with event', () => {

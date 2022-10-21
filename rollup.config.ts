@@ -23,7 +23,7 @@ const rollupOptions: readonly RollupOptions[] = [
       },
       {
         dir: outputDir,
-        entryFileNames: '[name].esm.js',
+        entryFileNames: '[name].mjs',
         exports: 'named',
         format: 'esm',
         plugins: [getBabelOutputPlugin()],
