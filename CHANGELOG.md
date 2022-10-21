@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/foray1010/use-typed-event-listener/compare/v3.0.0...v4.0.0) (2022-10-21)
+
+### ⚠ BREAKING CHANGES
+
+- drop node.js v12 and v17
+- only support node ^12.22.0 || ^14.17.0 || >=16.13.0
+- drop node 10
+- require react >=16.14.0 and typescript >=4.1.2
+
+### Bug Fixes
+
+- export valid es modules files ([f5fad3a](https://github.com/foray1010/use-typed-event-listener/commit/f5fad3a27b70107e08b7f03cc60df3ac1eee0cd9))
+- make typescript as optional peer dependency ([feff3eb](https://github.com/foray1010/use-typed-event-listener/commit/feff3eb62bc82689932bb082256bd42bc17a7915))
+
+- bump node version requirement ([7774dc8](https://github.com/foray1010/use-typed-event-listener/commit/7774dc883eb61fb58341f0fe2b38553c98b3e8bd))
+- drop node 10 ([0f7b3f4](https://github.com/foray1010/use-typed-event-listener/commit/0f7b3f45661c2c57dfefe885ad703a0c74339513))
+- drop node.js v12 and v17 ([da930ed](https://github.com/foray1010/use-typed-event-listener/commit/da930ed4ba8a69787d8cf9fc519657f2a8fc58de))
+- use react jsx-runtime ([d721958](https://github.com/foray1010/use-typed-event-listener/commit/d7219586415bded931fdb5d0d845106d4e8d87c0))
+
 ## [3.0.0](https://github.com/foray1010/use-typed-event-listener/compare/v2.0.2...v3.0.0) (2020-08-03)
 
 ### ⚠ BREAKING CHANGES
