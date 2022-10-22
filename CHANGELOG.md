@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.2](https://github.com/foray1010/use-typed-event-listener/compare/v4.0.1...v4.0.2) (2022-10-22)
+
+### Bug Fixes
+
+- cannot install due to unnecessary postinstall script ([d857003](https://github.com/foray1010/use-typed-event-listener/commit/d8570030a2b971864ac4d74bd89a972482188c2c))
+
 ### [4.0.1](https://github.com/foray1010/use-typed-event-listener/compare/v4.0.0...v4.0.1) (2022-10-21)
 
 ### Bug Fixes
