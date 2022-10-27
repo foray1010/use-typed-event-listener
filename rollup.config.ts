@@ -1,33 +1,33 @@
-import { babel, getBabelOutputPlugin } from '@rollup/plugin-babel'
-import type { RollupOptions } from 'rollup'
+import { babel } from '@rollup/plugin-babel'
+import type { OutputOptions, RollupOptions } from 'rollup'
 import dts from 'rollup-plugin-dts'
 import { terser } from 'rollup-plugin-terser'
 
-import pkg from './package.json'
-
 const outputDir = 'dist'
+const commonOutputOptions: OutputOptions = {
+  dir: outputDir,
+  exports: 'named',
+  generatedCode: {
+    constBindings: true,
+    preset: 'es2015',
+  },
+  sourcemap: true,
+}
 
 const rollupOptions: readonly RollupOptions[] = [
   {
-    external: Object.keys(pkg.dependencies),
+    external: /\/node_modules\//,
     input: 'src/index.ts',
     output: [
       {
-        dir: outputDir,
+        ...commonOutputOptions,
         entryFileNames: '[name].cjs',
-        exports: 'named',
         format: 'cjs',
-        plugins: [getBabelOutputPlugin()],
-        preferConst: true,
-        sourcemap: true,
       },
       {
-        dir: outputDir,
+        ...commonOutputOptions,
         entryFileNames: '[name].mjs',
-        exports: 'named',
         format: 'esm',
-        plugins: [getBabelOutputPlugin()],
-        sourcemap: true,
       },
     ],
     plugins: [
