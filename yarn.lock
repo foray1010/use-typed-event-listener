@@ -800,7 +800,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.18.6"
 
-"@babel/plugin-transform-runtime@^7.19.1":
+"@babel/plugin-transform-runtime@^7.19.6":
   version "7.19.6"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-runtime/-/plugin-transform-runtime-7.19.6.tgz#9d2a9dbf4e12644d6f46e5e75bfbf02b5d6e9194"
   integrity sha512-PRH37lz4JU156lYFW1p8OxE5i7d6Sl/zV58ooyr+q1J1lnQPyg5tIiXlIwNVhJaY4W3TmOtdc8jqdXQcB1v5Yw==
@@ -872,7 +872,7 @@
     "@babel/helper-create-regexp-features-plugin" "^7.18.6"
     "@babel/helper-plugin-utils" "^7.18.6"
 
-"@babel/preset-env@^7.19.1":
+"@babel/preset-env@^7.19.4":
   version "7.20.2"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.20.2.tgz#9b1642aa47bb9f43a86f9630011780dab7f86506"
   integrity sha512-1G0efQEWR1EHkKvKHqbG+IN/QdgwfByUpM5V5QroDzGV2t3S/WXNQd693cHiHTlCFMpr9B6FkPFXDA2lQcKoDg==
@@ -1227,19 +1227,19 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@foray1010/babel-preset@9.2.0":
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/@foray1010/babel-preset/-/babel-preset-9.2.0.tgz#bbcf87f84f4b034e2232fc782c4b817d657a75a3"
-  integrity sha512-RhUDKI1GGVT8QZevh3zmrB/Vk6VI0a234WDoZHUQn4XHchdSJyXM3nyj0XThrCQj6Z5sEzXrAZ6+kunT3iJjPg==
+"@foray1010/babel-preset@10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@foray1010/babel-preset/-/babel-preset-10.0.0.tgz#1123249cb91242d9546e69058ac6612f6ddc55fc"
+  integrity sha512-96YSgn+vvplzGm+hfef5wIRMEOnOkN0UKeOShC4sy5XElDd/lyotQBXA5glZC5R92HndzXbkiMnd/4BYolEREw==
   dependencies:
     "@babel/helper-plugin-utils" "^7.19.0"
     "@babel/plugin-transform-react-constant-elements" "^7.18.12"
     "@babel/plugin-transform-react-inline-elements" "^7.12.3"
-    "@babel/plugin-transform-runtime" "^7.19.1"
-    "@babel/preset-env" "^7.19.1"
+    "@babel/plugin-transform-runtime" "^7.19.6"
+    "@babel/preset-env" "^7.19.4"
     "@babel/preset-react" "^7.13.13"
     "@babel/preset-typescript" "^7.13.0"
-    "@foray1010/common-presets-utils" "^5.1.0"
+    "@foray1010/common-presets-utils" "^6.0.0"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
     browserslist "^4.21.4"
     semver "^7.3.5"
@@ -1248,6 +1248,13 @@
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/@foray1010/common-presets-utils/-/common-presets-utils-5.1.0.tgz#6addd123b538f0002f5b93ca8f8e71d93db254be"
   integrity sha512-2kg+Uj0l9FprZjy5SVDSo6puHQhgNu0SKtVBSGCWdMZBXs3bUajcnMmi0S++/5e+no2vykOEhFT+1N9aWFuJjg==
+  dependencies:
+    read-pkg-up "^7.0.1"
+
+"@foray1010/common-presets-utils@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@foray1010/common-presets-utils/-/common-presets-utils-6.0.0.tgz#0cc597a3c788a315da2c8edc3aedb9dac1172c1a"
+  integrity sha512-MLTDEGgeMP25gLrVwS6MZrNv0GRK/P8i4iG1Li25k8LCqYleG/Ngj6N/hKyMr9UYLjKKeCrVKHt82SOrSrNvnw==
   dependencies:
     read-pkg-up "^7.0.1"
 
@@ -1278,24 +1285,24 @@
     eslint-plugin-testing-library "^5.7.0"
     eslint-plugin-unicorn "^42.0.0"
 
-"@foray1010/jest-preset@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@foray1010/jest-preset/-/jest-preset-2.1.0.tgz#994ef5dd420a2b7ca20e27e36cacba4a7103730b"
-  integrity sha512-SYiZf1OzFIl3akNuHrj/c6y351VIcZrEompgB+5f/GQjleQqK2eLyYJ17N52m5vhf4hRJxDqpdNEJ2znl6YSug==
+"@foray1010/jest-preset@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@foray1010/jest-preset/-/jest-preset-3.0.0.tgz#3fee672f260480595b5e104cdf40a31723fd3742"
+  integrity sha512-JPjf3ve5tAJsnLquTqbtRCWZ7CrWlzpk27s70NskHEguyJqou2IDYva8Rj7L9Xhs2X6sbutDOT4e+vMlSV0uwg==
   dependencies:
     ts-jest-resolver "^2.0.0"
 
-"@foray1010/prettier-config@7.0.5":
-  version "7.0.5"
-  resolved "https://registry.yarnpkg.com/@foray1010/prettier-config/-/prettier-config-7.0.5.tgz#69046c0db8c6a8600d1d792d6c883bfa783175ef"
-  integrity sha512-XLYVRI0YPtgfaYY6N75qbLBD9V8OfpcNdGe755hoHfhf25Shms0xhktJMI5Xkf5lNBognIswd+wIjiwc+p/Ixg==
+"@foray1010/prettier-config@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@foray1010/prettier-config/-/prettier-config-8.0.0.tgz#63b3395a3691fed46593864abe5b8343328cc3af"
+  integrity sha512-dvEsuJ1JkA4KpieqeFx/P0ghW2C5das1DKsr/nfcKaL0R+zHYiG2w5vVFBYtuDXelfI7PLdRJFM29ewv8KlH9A==
   dependencies:
     prettier-plugin-packagejson "^2.2.5"
 
-"@foray1010/remark-preset@7.0.4":
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/@foray1010/remark-preset/-/remark-preset-7.0.4.tgz#f5f8b89250b4bfcf751766b58498653f4c129e61"
-  integrity sha512-ufgxkvBmNxaAig4UXsPZT1eb0PH/5umUiZ8QTbQIqC0VQzBV0IX8SOFVV6LDTB9chShqpZrir/oFsX9+WKcB5A==
+"@foray1010/remark-preset@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@foray1010/remark-preset/-/remark-preset-8.0.0.tgz#b1594fda877a4c20742900bc4c21113d976f5e9f"
+  integrity sha512-PnBfgi3XSxoxDh7Fj5M3IkUA9ZiK8q2qwAaqSJLUqGnKg/WsjDcXWuHZh1kuxff9ktpZV+8+TZp+Sa2k0xN6Dw==
   dependencies:
     remark-frontmatter "^4.0.0"
     remark-lint-no-dead-urls "^1.1.0"
@@ -1305,10 +1312,10 @@
     remark-preset-prettier "^2.0.1"
     remark-validate-links "^12.1.0"
 
-"@foray1010/tsconfig@9.1.0":
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@foray1010/tsconfig/-/tsconfig-9.1.0.tgz#f22802c6c7381f0d8d77584f43b87cfa074042a9"
-  integrity sha512-7rJKT4jOfzM2UVs8IWpZiwobQved9uyrpaHIHg7g3mRDiIlu4bhb9/lrbjG1sBQXx9RuSqaad926C8ALsuZNlA==
+"@foray1010/tsconfig@10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@foray1010/tsconfig/-/tsconfig-10.0.0.tgz#03680403b3630c644b61640ed57cc90ebcbbaf12"
+  integrity sha512-4u9tLknIhfxHqDuk5MLy3JJc5mQ79tVkNhIh9w32jaIicVYJLsU8blB4Kqeid0BFgMts3nBFhYbTmr3P4NIbSw==
 
 "@humanwhocodes/config-array@^0.11.6":
   version "0.11.7"
