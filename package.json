@@ -90,7 +90,7 @@
     "size-limit": "8.1.0",
     "ts-node": "10.9.1",
     "type-coverage": "2.23.0",
-    "typescript": "4.8.4"
+    "typescript": "4.9.3"
   },
   "peerDependencies": {
     "react": ">=16.14.0",
