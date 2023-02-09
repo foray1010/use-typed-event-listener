@@ -8,7 +8,7 @@ import useEventListener from './index.js'
 
 describe('useEventListener', () => {
   it('should bind event listener and call with event', () => {
-    const eventListener = jest.fn<void, [MouseEvent]>()
+    const eventListener = jest.fn<void, [MouseEvent], void>()
 
     renderHook(() => {
       useEventListener(window, 'click', eventListener)
@@ -20,9 +20,9 @@ describe('useEventListener', () => {
   })
 
   it('should create event listener with `options`', () => {
-    const childEventListener = jest.fn<void, [MouseEvent]>()
+    const childEventListener = jest.fn<void, [MouseEvent], void>()
     const parentEventListener = jest
-      .fn<void, [MouseEvent]>()
+      .fn<void, [MouseEvent], void>()
       .mockImplementation((evt) => {
         evt.stopPropagation()
       })
@@ -42,7 +42,7 @@ describe('useEventListener', () => {
   })
 
   it('should not re-bind event listener when `options` is the same', () => {
-    const eventListener = jest.fn<void, [MouseEvent]>()
+    const eventListener = jest.fn<void, [MouseEvent], void>()
 
     const dummyElement = document.createElement('div')
     jest.spyOn(dummyElement, 'addEventListener')
@@ -59,7 +59,7 @@ describe('useEventListener', () => {
   })
 
   it('should re-bind event listener when `options` is not the same', () => {
-    const eventListener = jest.fn<void, [MouseEvent]>()
+    const eventListener = jest.fn<void, [MouseEvent], void>()
 
     const dummyElement = document.createElement('div')
     jest.spyOn(dummyElement, 'addEventListener')
@@ -80,7 +80,7 @@ describe('useEventListener', () => {
   })
 
   it('should unbind event listener', () => {
-    const eventListener = jest.fn<void, [MouseEvent]>()
+    const eventListener = jest.fn<void, [MouseEvent], void>()
 
     const { unmount } = renderHook(() => {
       useEventListener(window, 'click', eventListener)
@@ -109,8 +109,8 @@ describe('useEventListener', () => {
   })
 
   it('should update event listener without re-binding', () => {
-    const firstEventListener = jest.fn<void, [MouseEvent]>()
-    const secondEventListener = jest.fn<void, [MouseEvent]>()
+    const firstEventListener = jest.fn<void, [MouseEvent], void>()
+    const secondEventListener = jest.fn<void, [MouseEvent], void>()
 
     const dummyElement = document.createElement('div')
     jest.spyOn(dummyElement, 'addEventListener')
@@ -134,7 +134,7 @@ describe('useEventListener', () => {
   })
 
   it('should work with window element', () => {
-    const eventListener = jest.fn<void, [MouseEvent]>()
+    const eventListener = jest.fn<void, [MouseEvent], void>()
 
     renderHook(() => {
       useEventListener(window, 'click', eventListener)
@@ -145,7 +145,7 @@ describe('useEventListener', () => {
   })
 
   it('should work with document element', () => {
-    const eventListener = jest.fn<void, [MouseEvent]>()
+    const eventListener = jest.fn<void, [MouseEvent], void>()
 
     renderHook(() => {
       useEventListener(document, 'click', eventListener)
@@ -156,7 +156,7 @@ describe('useEventListener', () => {
   })
 
   it('should work with html element', () => {
-    const eventListener = jest.fn<void, [MouseEvent]>()
+    const eventListener = jest.fn<void, [MouseEvent], void>()
 
     renderHook(() => {
       useEventListener(document.body, 'click', eventListener)
