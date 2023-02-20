@@ -66,7 +66,7 @@
     "@foray1010/tsconfig": "10.0.0",
     "@rollup/plugin-babel": "6.0.3",
     "@size-limit/preset-small-lib": "8.2.4",
-    "@testing-library/react": "13.4.0",
+    "@testing-library/react": "14.0.0",
     "@testing-library/react-hooks": "8.0.1",
     "@types/jest": "29.4.0",
     "@types/react": "18.0.28",
