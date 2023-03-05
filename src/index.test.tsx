@@ -1,6 +1,6 @@
 /* eslint-disable testing-library/prefer-user-event */
 
-import { fireEvent, renderHook } from '@testing-library/react'
+import { fireEvent, render, renderHook } from '@testing-library/react'
 import * as React from 'react'
 
 import useEventListener from './index.js'
@@ -171,11 +171,25 @@ describe('useEventListener', () => {
     )
     const ref = refResult.current
 
-    expect(() => {
-      renderHook(() => {
-        useEventListener(ref.current, 'click', () => {})
-      })
-    }).not.toThrow()
+    const eventListener = jest.fn<void, [MouseEvent], void>()
+    // should works with unassigned ref
+    const { rerender } = renderHook(() => {
+      useEventListener(ref.current, 'click', eventListener)
+    })
+
+    render(<div ref={ref} />)
+    if (!ref.current) {
+      throw new TypeError('ref.current should be assigned')
+    }
+
+    // should not fire event handler because ref is unassigned until after rerender
+    fireEvent.click(ref.current)
+    expect(eventListener).toHaveBeenCalledTimes(0)
+
+    rerender()
+
+    fireEvent.click(ref.current)
+    expect(eventListener).toHaveBeenCalledTimes(1)
   })
 
   it('should pass if element is null', () => {
