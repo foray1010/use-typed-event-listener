@@ -1,7 +1,6 @@
 /* eslint-disable testing-library/prefer-user-event */
 
-import { fireEvent } from '@testing-library/react'
-import { renderHook } from '@testing-library/react-hooks'
+import { fireEvent, renderHook } from '@testing-library/react'
 import * as React from 'react'
 
 import useEventListener from './index.js'
@@ -172,26 +171,26 @@ describe('useEventListener', () => {
     )
     const ref = refResult.current
 
-    const { result } = renderHook(() => {
-      useEventListener(ref.current, 'click', () => {})
-    })
-
-    expect(result.error).toBeUndefined()
+    expect(() => {
+      renderHook(() => {
+        useEventListener(ref.current, 'click', () => {})
+      })
+    }).not.toThrow()
   })
 
   it('should pass if element is null', () => {
-    const { result } = renderHook(() => {
-      useEventListener(null, 'click', () => {})
-    })
-
-    expect(result.error).toBeUndefined()
+    expect(() => {
+      renderHook(() => {
+        useEventListener(null, 'click', () => {})
+      })
+    }).not.toThrow()
   })
 
   it('should pass if element is undefined', () => {
-    const { result } = renderHook(() => {
-      useEventListener(undefined, 'click', () => {})
-    })
-
-    expect(result.error).toBeUndefined()
+    expect(() => {
+      renderHook(() => {
+        useEventListener(undefined, 'click', () => {})
+      })
+    }).not.toThrow()
   })
 })
