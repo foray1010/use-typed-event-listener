@@ -1,6 +1,4 @@
-import type { Config } from 'jest'
-
-const config: Config = {
+const config = {
   preset: '@foray1010',
   testEnvironment: 'jest-environment-jsdom',
 }
