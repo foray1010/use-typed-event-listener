@@ -28,7 +28,7 @@ describe('useEventListener', () => {
 
     const childElement = document.createElement('div')
     const parentElement = document.createElement('div')
-    parentElement.appendChild(childElement)
+    parentElement.append(childElement)
 
     renderHook(() => {
       useEventListener(childElement, 'click', childEventListener)

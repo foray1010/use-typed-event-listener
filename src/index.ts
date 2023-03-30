@@ -49,7 +49,7 @@ function useEventListener<
   const memorizedOptions = useDeepCompareMemo(() => options, [options])
 
   React.useEffect(() => {
-    if (!element) return undefined
+    if (!element) return
 
     // to avoid keep updating listener in DOM
     const wrappedListener: typeof listenerRef.current = (evt) =>
