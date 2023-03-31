@@ -19,6 +19,14 @@ npm install use-typed-event-listener
 yarn add use-typed-event-listener
 ```
 
+## Development Setup
+
+We are using [corepack](https://nodejs.org/api/corepack.html) to manage the `yarn` version
+
+```bash
+corepack enable
+```
+
 ## Interface
 
 ```js

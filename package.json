@@ -34,16 +34,16 @@
     "*.md"
   ],
   "scripts": {
-    "prebuild": "yarn clean:build",
-    "build": "tsc --project tsconfig.build.json && rollup --configPlugin \"babel={ babelHelpers: 'runtime', extensions: ['.js', '.ts'] }\" -c",
+    "build": "yarn clean:build && tsc --project tsconfig.build.json && rollup --configPlugin \"babel={ babelHelpers: 'runtime', extensions: ['.js', '.ts'] }\" -c",
     "ci": "npm-run-all -p 'lint:*' 'type:*' && yarn test && yarn build && size-limit",
     "clean:build": "shx rm -rf dist/ build/dts/",
     "eslint": "ESLINT_USE_FLAT_CONFIG=true eslint --config eslint.config.mjs",
-    "prepare": "husky install",
+    "postinstall": "husky install",
     "lint": "npm-run-all -p 'lint:*'",
     "lint:js": "yarn eslint .",
     "lint:md": "yarn remark .",
-    "prepublishOnly": "yarn ci",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable",
     "prettier": "prettier --ignore-path=node_modules/@foray1010/prettier-config/prettierignore",
     "remark": "remark --frail --ignore-path=node_modules/@foray1010/remark-preset/remarkignore --ignore-path-resolve-from=cwd --silently-ignore",
     "test": "jest",
@@ -77,6 +77,7 @@
     "lint-staged": "13.2.0",
     "node-notifier": "10.0.1",
     "npm-run-all": "4.1.5",
+    "pinst": "3.0.0",
     "prettier": "2.8.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -98,6 +99,7 @@
       "optional": true
     }
   },
+  "packageManager": "yarn@3.5.0",
   "engines": {
     "node": "^16.14.0 || >=18.12.0"
   }
