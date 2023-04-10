@@ -3181,14 +3181,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.0.30":
-  version: 18.0.30
-  resolution: "@types/react@npm:18.0.30"
+"@types/react@npm:18.0.33":
+  version: 18.0.33
+  resolution: "@types/react@npm:18.0.33"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 3ca13fd10a1ee92826e37cd8c2fe563bff65d4bdb3ff53f632bc46c8fba2e94e24247b4b77ce957677a54e592299782e1235f7a3dfcfea327cb3213ddc98e968
+  checksum: 4fbd2b2b6a26378bdfde121081a6406ec2d39e4ba87ea5f6897ab7bb2198713165e6fd703ad4ed7ba1d4f23ef54a4c9f108f3105c7ed8e136411ee6bdebc5669
   languageName: node
   linkType: hard
 
@@ -12607,7 +12607,7 @@ __metadata:
     "@size-limit/preset-small-lib": 8.2.4
     "@testing-library/react": 14.0.0
     "@types/jest": 29.5.0
-    "@types/react": 18.0.30
+    "@types/react": 18.0.33
     eslint: 8.37.0
     husky: 8.0.3
     ignore-sync: 6.0.2
