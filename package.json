@@ -67,7 +67,7 @@
     "@size-limit/preset-small-lib": "8.2.4",
     "@testing-library/react": "14.0.0",
     "@types/jest": "29.5.1",
-    "@types/react": "18.0.37",
+    "@types/react": "18.2.0",
     "eslint": "8.38.0",
     "husky": "8.0.3",
     "ignore-sync": "6.0.2",
