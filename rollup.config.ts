@@ -9,7 +9,6 @@ const commonOutputOptions: Readonly<OutputOptions> = {
   exports: 'named',
   generatedCode: {
     constBindings: true,
-    preset: 'es2015',
   },
   sourcemap: true,
 }
