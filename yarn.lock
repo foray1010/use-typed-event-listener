@@ -12208,9 +12208,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-coverage-core@npm:^2.25.3":
-  version: 2.25.3
-  resolution: "type-coverage-core@npm:2.25.3"
+"type-coverage-core@npm:^2.26.0":
+  version: 2.26.0
+  resolution: "type-coverage-core@npm:2.26.0"
   dependencies:
     fast-glob: 3
     minimatch: 6 || 7 || 8 || 9
@@ -12219,19 +12219,19 @@ __metadata:
     tsutils: 3
   peerDependencies:
     typescript: 2 || 3 || 4 || 5
-  checksum: f227be9284ebcf95f356eb47c172f2f44c693d95fa8a956ff606b1a41fab8d3a1c2d9cb8aa30365ff43e7ed78cbe793d49287606c7708d7494b9b145d3388cea
+  checksum: 3036fe47d10c38faaffe3961da4f0d20aca8e570f465eb13215f7031120087df51aaa523aa0742c0d0860c04191df3b0a102a65c7e14245fbd13bff58817e07c
   languageName: node
   linkType: hard
 
-"type-coverage@npm:2.25.3":
-  version: 2.25.3
-  resolution: "type-coverage@npm:2.25.3"
+"type-coverage@npm:2.26.0":
+  version: 2.26.0
+  resolution: "type-coverage@npm:2.26.0"
   dependencies:
     minimist: 1
-    type-coverage-core: ^2.25.3
+    type-coverage-core: ^2.26.0
   bin:
     type-coverage: bin/type-coverage
-  checksum: a6e55f82d506dcf89d20320afea3e5bb7349fd7c0d72c39f7243be0c8d6bc5e801aecabf02260309ec6d07b93e35d800a752757235cd91e2b93ac1f186aeacc3
+  checksum: a635e3144eed389eb08dea6c0f0bb20d25895c17085a1d6f68959b82debd76454871bc4460b27ead7426e8d1e2e7c6d23278de7f1cc6fd71e1a9853d282fb954
   languageName: node
   linkType: hard
 
@@ -12722,7 +12722,7 @@ __metadata:
     rollup-plugin-terser: 7.0.2
     shx: 0.3.4
     size-limit: 8.2.4
-    type-coverage: 2.25.3
+    type-coverage: 2.26.0
     typescript: 5.0.4
     use-deep-compare: ^1.1.0
   peerDependencies:
