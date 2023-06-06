@@ -66,7 +66,7 @@
     "@rollup/plugin-babel": "6.0.3",
     "@size-limit/preset-small-lib": "8.2.4",
     "@testing-library/react": "14.0.0",
-    "@types/jest": "29.5.1",
+    "@types/jest": "29.5.2",
     "@types/react": "18.2.7",
     "eslint": "8.41.0",
     "husky": "8.0.3",
