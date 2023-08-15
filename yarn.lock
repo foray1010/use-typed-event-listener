@@ -2064,9 +2064,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@foray1010/eslint-config@npm:11.0.0":
-  version: 11.0.0
-  resolution: "@foray1010/eslint-config@npm:11.0.0"
+"@foray1010/eslint-config@npm:11.0.1":
+  version: 11.0.1
+  resolution: "@foray1010/eslint-config@npm:11.0.1"
   dependencies:
     "@eslint-community/eslint-plugin-eslint-comments": ^4.0.0
     "@eslint/js": ^8.44.0
@@ -2087,7 +2087,7 @@ __metadata:
     eslint-plugin-react: ^7.32.2
     eslint-plugin-react-hooks: ^4.2.0
     eslint-plugin-simple-import-sort: ^10.0.0
-    eslint-plugin-testing-library: ^5.10.2
+    eslint-plugin-testing-library: ^6.0.0
     eslint-plugin-unicorn: ^48.0.0
     globals: ^13.19.0
   peerDependencies:
@@ -2100,7 +2100,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: a802bf69c1d62bc8d682f7347df4c5cd4e49a3cf7a3ae3fec473ec85efcaa420c03d9db661c431495f7ad346ee2455fbbe6cdab4ccf16ef500f57351d225d1de
+  checksum: ffc955ec13070f24ad2f199fe09e6ca4dd0816676e5d09fed11adea56ce2f01d280b6f5177be28016838f61fd09b6f189bb9a13e360b4b4fd984b9edad584af2
   languageName: node
   linkType: hard
 
@@ -5387,14 +5387,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^5.10.2":
-  version: 5.11.0
-  resolution: "eslint-plugin-testing-library@npm:5.11.0"
+"eslint-plugin-testing-library@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "eslint-plugin-testing-library@npm:6.0.0"
   dependencies:
     "@typescript-eslint/utils": ^5.58.0
   peerDependencies:
     eslint: ^7.5.0 || ^8.0.0
-  checksum: 7f19d3dedd7788b411ca3d9045de682feb26025b9c26d97d4e2f0bf62f5eaa276147d946bd5d0cd967b822e546a954330fdb7ef80485301264f646143f011a02
+  checksum: 35ca701bc7cd788b0a1505a191d5c00721ede4bbb6ffd126d6700713dc104397451edefbca52b7c6c3eae2d4b55174ea6630a28dc3642b8b73ee2e2ba997cde4
   languageName: node
   linkType: hard
 
@@ -12500,7 +12500,7 @@ __metadata:
     "@commitlint/cli": 17.6.7
     "@commitlint/config-conventional": 17.6.7
     "@foray1010/babel-preset": 10.0.0
-    "@foray1010/eslint-config": 11.0.0
+    "@foray1010/eslint-config": 11.0.1
     "@foray1010/jest-preset": 4.0.0
     "@foray1010/prettier-config": 10.0.0
     "@foray1010/remark-preset": 9.0.0
