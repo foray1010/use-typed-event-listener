@@ -1,7 +1,7 @@
 import { babel } from '@rollup/plugin-babel'
+import terser from '@rollup/plugin-terser'
 import type { OutputOptions, RollupOptions } from 'rollup'
 import dts from 'rollup-plugin-dts'
-import { terser } from 'rollup-plugin-terser'
 
 const outputDir = 'dist'
 const commonOutputOptions: Readonly<OutputOptions> = {
