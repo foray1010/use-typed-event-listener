@@ -11906,7 +11906,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-coverage-core@npm:^2.26.0":
+"type-coverage-core@npm:^2.26.2":
   version: 2.26.2
   resolution: "type-coverage-core@npm:2.26.2"
   dependencies:
@@ -11921,15 +11921,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-coverage@npm:2.26.0":
-  version: 2.26.0
-  resolution: "type-coverage@npm:2.26.0"
+"type-coverage@npm:2.26.2":
+  version: 2.26.2
+  resolution: "type-coverage@npm:2.26.2"
   dependencies:
     minimist: 1
-    type-coverage-core: ^2.26.0
+    type-coverage-core: ^2.26.2
   bin:
     type-coverage: bin/type-coverage
-  checksum: a635e3144eed389eb08dea6c0f0bb20d25895c17085a1d6f68959b82debd76454871bc4460b27ead7426e8d1e2e7c6d23278de7f1cc6fd71e1a9853d282fb954
+  checksum: e7c8bd901ef2fa39b82fcedf25e533a757a4f9cf415f9017fc7bee4896c27b51ee8744019987a5aef6494f8ab48041a3a5d03148af260ca0adaf9ba9937af172
   languageName: node
   linkType: hard
 
@@ -12479,7 +12479,7 @@ __metadata:
     rollup-plugin-dts: 5.3.1
     shx: 0.3.4
     size-limit: 8.2.6
-    type-coverage: 2.26.0
+    type-coverage: 2.26.2
     typescript: 5.1.6
     use-deep-compare: ^1.1.0
   peerDependencies:
