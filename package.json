@@ -83,7 +83,7 @@
     "react-dom": "18.2.0",
     "remark-cli": "11.0.0",
     "rollup": "3.29.1",
-    "rollup-plugin-dts": "5.3.1",
+    "rollup-plugin-dts": "6.0.2",
     "shx": "0.3.4",
     "size-limit": "8.2.6",
     "type-coverage": "2.26.2",
