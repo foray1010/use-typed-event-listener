@@ -63,7 +63,7 @@
     "@foray1010/prettier-config": "10.0.0",
     "@foray1010/remark-preset": "9.0.1",
     "@foray1010/tsconfig": "11.0.2",
-    "@rollup/plugin-babel": "6.0.3",
+    "@rollup/plugin-babel": "6.0.4",
     "@rollup/plugin-terser": "0.4.3",
     "@size-limit/preset-small-lib": "9.0.0",
     "@testing-library/react": "14.0.0",
