@@ -65,7 +65,7 @@
     "@foray1010/tsconfig": "11.0.2",
     "@rollup/plugin-babel": "6.0.4",
     "@rollup/plugin-terser": "0.4.4",
-    "@size-limit/preset-small-lib": "10.0.1",
+    "@size-limit/preset-small-lib": "10.0.3",
     "@testing-library/react": "14.0.0",
     "@types/jest": "29.5.8",
     "@types/react": "18.2.37",
@@ -85,7 +85,7 @@
     "rollup": "4.1.5",
     "rollup-plugin-dts": "6.1.0",
     "shx": "0.3.4",
-    "size-limit": "10.0.1",
+    "size-limit": "10.0.3",
     "type-coverage": "2.27.0",
     "typescript": "5.2.2"
   },
