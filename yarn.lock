@@ -2560,86 +2560,86 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/rollup-android-arm-eabi@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@rollup/rollup-android-arm-eabi@npm:4.5.0"
+"@rollup/rollup-android-arm-eabi@npm:4.5.2":
+  version: 4.5.2
+  resolution: "@rollup/rollup-android-arm-eabi@npm:4.5.2"
   conditions: os=android & cpu=arm
   languageName: node
   linkType: hard
 
-"@rollup/rollup-android-arm64@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@rollup/rollup-android-arm64@npm:4.5.0"
+"@rollup/rollup-android-arm64@npm:4.5.2":
+  version: 4.5.2
+  resolution: "@rollup/rollup-android-arm64@npm:4.5.2"
   conditions: os=android & cpu=arm64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-darwin-arm64@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@rollup/rollup-darwin-arm64@npm:4.5.0"
+"@rollup/rollup-darwin-arm64@npm:4.5.2":
+  version: 4.5.2
+  resolution: "@rollup/rollup-darwin-arm64@npm:4.5.2"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-darwin-x64@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@rollup/rollup-darwin-x64@npm:4.5.0"
+"@rollup/rollup-darwin-x64@npm:4.5.2":
+  version: 4.5.2
+  resolution: "@rollup/rollup-darwin-x64@npm:4.5.2"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-arm-gnueabihf@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@rollup/rollup-linux-arm-gnueabihf@npm:4.5.0"
+"@rollup/rollup-linux-arm-gnueabihf@npm:4.5.2":
+  version: 4.5.2
+  resolution: "@rollup/rollup-linux-arm-gnueabihf@npm:4.5.2"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-arm64-gnu@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@rollup/rollup-linux-arm64-gnu@npm:4.5.0"
+"@rollup/rollup-linux-arm64-gnu@npm:4.5.2":
+  version: 4.5.2
+  resolution: "@rollup/rollup-linux-arm64-gnu@npm:4.5.2"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-arm64-musl@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@rollup/rollup-linux-arm64-musl@npm:4.5.0"
+"@rollup/rollup-linux-arm64-musl@npm:4.5.2":
+  version: 4.5.2
+  resolution: "@rollup/rollup-linux-arm64-musl@npm:4.5.2"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-x64-gnu@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@rollup/rollup-linux-x64-gnu@npm:4.5.0"
+"@rollup/rollup-linux-x64-gnu@npm:4.5.2":
+  version: 4.5.2
+  resolution: "@rollup/rollup-linux-x64-gnu@npm:4.5.2"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-x64-musl@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@rollup/rollup-linux-x64-musl@npm:4.5.0"
+"@rollup/rollup-linux-x64-musl@npm:4.5.2":
+  version: 4.5.2
+  resolution: "@rollup/rollup-linux-x64-musl@npm:4.5.2"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@rollup/rollup-win32-arm64-msvc@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@rollup/rollup-win32-arm64-msvc@npm:4.5.0"
+"@rollup/rollup-win32-arm64-msvc@npm:4.5.2":
+  version: 4.5.2
+  resolution: "@rollup/rollup-win32-arm64-msvc@npm:4.5.2"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-win32-ia32-msvc@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@rollup/rollup-win32-ia32-msvc@npm:4.5.0"
+"@rollup/rollup-win32-ia32-msvc@npm:4.5.2":
+  version: 4.5.2
+  resolution: "@rollup/rollup-win32-ia32-msvc@npm:4.5.2"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@rollup/rollup-win32-x64-msvc@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@rollup/rollup-win32-x64-msvc@npm:4.5.0"
+"@rollup/rollup-win32-x64-msvc@npm:4.5.2":
+  version: 4.5.2
+  resolution: "@rollup/rollup-win32-x64-msvc@npm:4.5.2"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -11389,22 +11389,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:4.5.0":
-  version: 4.5.0
-  resolution: "rollup@npm:4.5.0"
+"rollup@npm:4.5.2":
+  version: 4.5.2
+  resolution: "rollup@npm:4.5.2"
   dependencies:
-    "@rollup/rollup-android-arm-eabi": "npm:4.5.0"
-    "@rollup/rollup-android-arm64": "npm:4.5.0"
-    "@rollup/rollup-darwin-arm64": "npm:4.5.0"
-    "@rollup/rollup-darwin-x64": "npm:4.5.0"
-    "@rollup/rollup-linux-arm-gnueabihf": "npm:4.5.0"
-    "@rollup/rollup-linux-arm64-gnu": "npm:4.5.0"
-    "@rollup/rollup-linux-arm64-musl": "npm:4.5.0"
-    "@rollup/rollup-linux-x64-gnu": "npm:4.5.0"
-    "@rollup/rollup-linux-x64-musl": "npm:4.5.0"
-    "@rollup/rollup-win32-arm64-msvc": "npm:4.5.0"
-    "@rollup/rollup-win32-ia32-msvc": "npm:4.5.0"
-    "@rollup/rollup-win32-x64-msvc": "npm:4.5.0"
+    "@rollup/rollup-android-arm-eabi": "npm:4.5.2"
+    "@rollup/rollup-android-arm64": "npm:4.5.2"
+    "@rollup/rollup-darwin-arm64": "npm:4.5.2"
+    "@rollup/rollup-darwin-x64": "npm:4.5.2"
+    "@rollup/rollup-linux-arm-gnueabihf": "npm:4.5.2"
+    "@rollup/rollup-linux-arm64-gnu": "npm:4.5.2"
+    "@rollup/rollup-linux-arm64-musl": "npm:4.5.2"
+    "@rollup/rollup-linux-x64-gnu": "npm:4.5.2"
+    "@rollup/rollup-linux-x64-musl": "npm:4.5.2"
+    "@rollup/rollup-win32-arm64-msvc": "npm:4.5.2"
+    "@rollup/rollup-win32-ia32-msvc": "npm:4.5.2"
+    "@rollup/rollup-win32-x64-msvc": "npm:4.5.2"
     fsevents: "npm:~2.3.2"
   dependenciesMeta:
     "@rollup/rollup-android-arm-eabi":
@@ -11435,7 +11435,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: baed6dade46ea34d051eb27fc33626638b1386389887d0ff42e922d9c31f1befc2d56b96024112ddd3d63bd9bdbcafa461982d857689752f286f5968669e2924
+  checksum: 3f6379be42e8a57501798269baa097554d80fd018a5acb003f64eefd525e4932285073f8cf6148c4b7ae51b5b0807005e0a884241e113f03866b6d0ac783a54e
   languageName: node
   linkType: hard
 
@@ -13004,7 +13004,7 @@ __metadata:
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     remark-cli: "npm:12.0.0"
-    rollup: "npm:4.5.0"
+    rollup: "npm:4.5.2"
     rollup-plugin-dts: "npm:6.1.0"
     shx: "npm:0.3.4"
     size-limit: "npm:11.0.0"
