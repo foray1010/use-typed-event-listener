@@ -4747,14 +4747,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dequal@npm:1.0.0":
-  version: 1.0.0
-  resolution: "dequal@npm:1.0.0"
-  checksum: 7e5a2348028922c8f9b6824a646f91c19e57eb3fce8aa9e5d2b916b57c157e2d9e1dbbc434b701f29e135a63a5c773109b2d9f74ecae865969a45b25f9f9f46f
-  languageName: node
-  linkType: hard
-
-"dequal@npm:^2.0.0":
+"dequal@npm:2.0.3, dequal@npm:^2.0.0":
   version: 2.0.3
   resolution: "dequal@npm:2.0.3"
   checksum: f98860cdf58b64991ae10205137c0e97d384c3a4edc7f807603887b7c4b850af1224a33d88012009f150861cbee4fa2d322c4cc04b9313bee312e47f6ecaa888
@@ -13063,13 +13056,13 @@ __metadata:
   linkType: hard
 
 "use-deep-compare@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "use-deep-compare@npm:1.1.0"
+  version: 1.2.1
+  resolution: "use-deep-compare@npm:1.2.1"
   dependencies:
-    dequal: "npm:1.0.0"
+    dequal: "npm:2.0.3"
   peerDependencies:
     react: ">=16.8.0"
-  checksum: 64470ed5f0a09437e94b9c34e4c1e4063ea2f91379bcdd5df87976755ae12191d8b7a921f0dce49d89342041a89482a9ec77c2c4e955cf0685b62404733213bd
+  checksum: b276ee3920190e902d1629f143ca5196084c2e35b62f6eef37eb37f3b5fdef2751ee20d2e5ff47dd4095dd2ba917728688419bc55b2e1a6f97b9c9d661d71ddb
   languageName: node
   linkType: hard
 
