@@ -54,7 +54,7 @@
     "use-deep-compare": "^1.1.0"
   },
   "devDependencies": {
-    "@babel/core": "7.23.9",
+    "@babel/core": "7.24.0",
     "@commitlint/cli": "19.0.3",
     "@commitlint/config-conventional": "19.0.3",
     "@foray1010/babel-preset": "10.0.0",
