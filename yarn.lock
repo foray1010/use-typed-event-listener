@@ -3037,13 +3037,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.77":
-  version: 18.2.77
-  resolution: "@types/react@npm:18.2.77"
+"@types/react@npm:18.2.79":
+  version: 18.2.79
+  resolution: "@types/react@npm:18.2.79"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10c0/9114149933dbee3fdf5900786e660afe3146e8e277424aaf94dca50e29f1de56802b38a83bb65166ff53da086062bb8d001af563a6c906fe3540bdc46554d05a
+  checksum: 10c0/c8a8a005d8830a48cc1ef93c3510c4935a2a03e5557dbecaa8f1038450cbfcb18eb206fa7fba7077d54b8da21faeb25577e897a333392770a7797f625b62c78a
   languageName: node
   linkType: hard
 
@@ -12605,7 +12605,7 @@ __metadata:
     "@size-limit/preset-small-lib": "npm:11.1.2"
     "@testing-library/react": "npm:14.2.2"
     "@types/jest": "npm:29.5.12"
-    "@types/react": "npm:18.2.77"
+    "@types/react": "npm:18.2.79"
     eslint: "npm:8.57.0"
     husky: "npm:9.0.11"
     ignore-sync: "npm:7.0.1"
