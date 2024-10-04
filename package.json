@@ -70,7 +70,7 @@
     "@foray1010/tsconfig": "13.0.0",
     "@rollup/plugin-babel": "6.0.4",
     "@rollup/plugin-terser": "0.4.4",
-    "@size-limit/preset-small-lib": "11.1.5",
+    "@size-limit/preset-small-lib": "11.1.6",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.0.1",
     "@types/jest": "29.5.13",
@@ -91,7 +91,7 @@
     "rollup": "4.22.5",
     "rollup-plugin-dts": "6.1.1",
     "shx": "0.3.4",
-    "size-limit": "11.1.5",
+    "size-limit": "11.1.6",
     "type-coverage": "2.29.1",
     "typescript": "5.6.2"
   },
