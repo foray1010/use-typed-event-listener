@@ -93,7 +93,7 @@
     "shx": "0.3.4",
     "size-limit": "11.1.6",
     "type-coverage": "2.29.7",
-    "typescript": "5.6.3"
+    "typescript": "5.7.2"
   },
   "peerDependencies": {
     "react": ">=16.14.0",
