@@ -88,7 +88,7 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "remark-cli": "12.0.1",
-    "rollup": "4.42.0",
+    "rollup": "4.43.0",
     "rollup-plugin-dts": "6.2.1",
     "shx": "0.4.0",
     "size-limit": "11.2.0",
